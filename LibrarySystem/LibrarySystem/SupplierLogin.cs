@@ -31,11 +31,17 @@ namespace LibrarySystem
         {
             if (txtPassword.Text == "supplier")
             {
-                MessageBox.Show("Correct Password");
+                SupplierOptions s1 = new SupplierOptions();
+                s1.Show();
             }
             else {
                 MessageBox.Show("Incorrect Password");
             }
+        }
+
+        private void SupplierLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

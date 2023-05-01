@@ -26,11 +26,17 @@ namespace LibrarySystem
         {
             if (txtPassword.Text == "library")
             {
-                MessageBox.Show("Correct Password");
+                LibraryOptions l1 = new LibraryOptions();
+                l1.Show();
             }
             else {
                 MessageBox.Show("Incorrect Password");
             }
+        }
+
+        private void LibraryLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

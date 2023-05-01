@@ -106,6 +106,7 @@
             this.Controls.Add(this.label1);
             this.Name = "SupplierLogin";
             this.Text = "SupplierLogin";
+            this.Load += new System.EventHandler(this.SupplierLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

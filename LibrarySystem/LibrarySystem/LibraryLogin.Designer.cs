@@ -105,6 +105,7 @@
             this.Controls.Add(this.label1);
             this.Name = "LibraryLogin";
             this.Text = "LibrayLogin";
+            this.Load += new System.EventHandler(this.LibraryLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

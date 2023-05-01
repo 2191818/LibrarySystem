@@ -30,11 +30,17 @@ namespace LibrarySystem
         private void okButton_Click(object sender, EventArgs e)
         {
             if (txtPassword.Text == "user") {
-                MessageBox.Show("Correct Password");
+                UserOptions u1 = new UserOptions();
+                u1.Show();
             } else
             {
                 MessageBox.Show("Incorrect Password");
             }
+        }
+
+        private void UserLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

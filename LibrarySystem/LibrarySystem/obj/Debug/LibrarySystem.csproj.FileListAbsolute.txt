@@ -26,3 +26,20 @@ C:\Users\2151583\Desktop\New folder\LibrarySystem\LibrarySystem\LibrarySystem\ob
 C:\Users\2151583\Desktop\New folder\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
 C:\Users\2151583\Desktop\New folder\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 C:\Users\2151583\Desktop\New folder\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe.config
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.exe
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\bin\Debug\LibrarySystem.pdb
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.AssemblyReference.cache
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LibraryOptions.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.LibraryLogin.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UserLogin.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.SupplierLogin.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Menu.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Properties.Resources.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.GenerateResource.cache
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.UserOptions.resources
+C:\Users\2151583\Desktop\Library\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.SupplierOptions.resources
