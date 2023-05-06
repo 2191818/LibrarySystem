@@ -28,38 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.libraryLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
+            this.ErrorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(108, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Enter Your Password";
             // 
             // libraryLabel
             // 
-            this.libraryLabel.AutoSize = true;
             this.libraryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.libraryLabel.Location = new System.Drawing.Point(135, 21);
+            this.libraryLabel.Location = new System.Drawing.Point(12, 50);
             this.libraryLabel.Name = "libraryLabel";
-            this.libraryLabel.Size = new System.Drawing.Size(214, 39);
+            this.libraryLabel.Size = new System.Drawing.Size(460, 39);
             this.libraryLabel.TabIndex = 1;
             this.libraryLabel.Text = "Library Login";
+            this.libraryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(104, 154);
+            this.passwordLabel.Location = new System.Drawing.Point(16, 128);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(56, 13);
             this.passwordLabel.TabIndex = 2;
@@ -67,16 +57,18 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(171, 151);
+            this.txtPassword.Location = new System.Drawing.Point(78, 125);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(207, 20);
+            this.txtPassword.Size = new System.Drawing.Size(394, 20);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(107, 177);
+            this.cancelButton.Location = new System.Drawing.Point(12, 151);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(139, 23);
+            this.cancelButton.Size = new System.Drawing.Size(224, 23);
             this.cancelButton.TabIndex = 4;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -84,40 +76,49 @@
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(252, 177);
+            this.okButton.Location = new System.Drawing.Point(248, 151);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(126, 23);
+            this.okButton.Size = new System.Drawing.Size(224, 23);
             this.okButton.TabIndex = 5;
             this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            // 
+            // ErrorLabel
+            // 
+            this.ErrorLabel.AutoSize = true;
+            this.ErrorLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.ErrorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ErrorLabel.Location = new System.Drawing.Point(12, 239);
+            this.ErrorLabel.Name = "ErrorLabel";
+            this.ErrorLabel.Size = new System.Drawing.Size(55, 13);
+            this.ErrorLabel.TabIndex = 8;
+            this.ErrorLabel.Text = "ErrorLabel";
             // 
             // LibraryLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.libraryLabel);
-            this.Controls.Add(this.label1);
             this.Name = "LibraryLogin";
             this.Text = "LibrayLogin";
-            this.Load += new System.EventHandler(this.LibraryLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label libraryLabel;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button okButton;
+        private System.Windows.Forms.Label ErrorLabel;
     }
 }

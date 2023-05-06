@@ -15,15 +15,13 @@ namespace LibrarySystem
         public SupplierLogin()
         {
             InitializeComponent();
+
+            ErrorLabel.Text = "";
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cancelButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new Menu().ShowDialog();
             this.Close();
         }
 
@@ -31,17 +29,21 @@ namespace LibrarySystem
         {
             if (txtPassword.Text == "supplier")
             {
-                SupplierOptions s1 = new SupplierOptions();
-                s1.Show();
+                this.Hide();
+                new SupplierOptions().ShowDialog();
+                this.Close();
             }
             else {
-                MessageBox.Show("Incorrect Password");
+                ErrorLabel.Text = "Incorrect Password";
             }
         }
 
-        private void SupplierLogin_Load(object sender, EventArgs e)
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                okButton_Click(this, new EventArgs());
+            }
         }
     }
 }

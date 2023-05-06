@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class UserOptions : Form
+    public partial class SupplierOptions : Form
     {
-        public UserOptions()
+        public SupplierOptions()
         {
             InitializeComponent();
         }
 
-        private void UserOptions_Load(object sender, EventArgs e)
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Menu().ShowDialog();
+            this.Close();
         }
     }
 }

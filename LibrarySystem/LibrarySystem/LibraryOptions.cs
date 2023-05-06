@@ -17,9 +17,11 @@ namespace LibrarySystem
             InitializeComponent();
         }
 
-        private void LibaryOptions_Load(object sender, EventArgs e)
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Menu().ShowDialog();
+            this.Close();
         }
     }
 }

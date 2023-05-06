@@ -28,40 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.supplierLabel = new System.Windows.Forms.Label();
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.pwdLabel = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ErrorLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.Location = new System.Drawing.Point(104, 101);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(270, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Enter Your Password";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // supplierLabel
-            // 
-            this.supplierLabel.AutoSize = true;
-            this.supplierLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.supplierLabel.Location = new System.Drawing.Point(119, 29);
-            this.supplierLabel.Name = "supplierLabel";
-            this.supplierLabel.Size = new System.Drawing.Size(236, 39);
-            this.supplierLabel.TabIndex = 1;
-            this.supplierLabel.Text = "Supplier Login";
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(110, 188);
+            this.cancelButton.Location = new System.Drawing.Point(12, 151);
             this.cancelButton.Name = "cancelButton";
-            this.cancelButton.Size = new System.Drawing.Size(139, 23);
+            this.cancelButton.Size = new System.Drawing.Size(224, 23);
             this.cancelButton.TabIndex = 2;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
@@ -69,9 +48,9 @@
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(255, 188);
+            this.okButton.Location = new System.Drawing.Point(248, 151);
             this.okButton.Name = "okButton";
-            this.okButton.Size = new System.Drawing.Size(139, 23);
+            this.okButton.Size = new System.Drawing.Size(224, 23);
             this.okButton.TabIndex = 3;
             this.okButton.Text = "OK";
             this.okButton.UseVisualStyleBackColor = true;
@@ -80,7 +59,7 @@
             // pwdLabel
             // 
             this.pwdLabel.AutoSize = true;
-            this.pwdLabel.Location = new System.Drawing.Point(107, 165);
+            this.pwdLabel.Location = new System.Drawing.Point(16, 128);
             this.pwdLabel.Name = "pwdLabel";
             this.pwdLabel.Size = new System.Drawing.Size(56, 13);
             this.pwdLabel.TabIndex = 4;
@@ -88,37 +67,61 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(187, 162);
+            this.txtPassword.Location = new System.Drawing.Point(78, 125);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(207, 20);
+            this.txtPassword.Size = new System.Drawing.Size(394, 20);
             this.txtPassword.TabIndex = 5;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.label2.Location = new System.Drawing.Point(12, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(460, 39);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Supplier Login";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ErrorLabel
+            // 
+            this.ErrorLabel.AutoSize = true;
+            this.ErrorLabel.ForeColor = System.Drawing.Color.Firebrick;
+            this.ErrorLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ErrorLabel.Location = new System.Drawing.Point(12, 239);
+            this.ErrorLabel.Name = "ErrorLabel";
+            this.ErrorLabel.Size = new System.Drawing.Size(55, 13);
+            this.ErrorLabel.TabIndex = 9;
+            this.ErrorLabel.Text = "ErrorLabel";
             // 
             // SupplierLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.ErrorLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.pwdLabel);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.supplierLabel);
-            this.Controls.Add(this.label1);
             this.Name = "SupplierLogin";
             this.Text = "SupplierLogin";
-            this.Load += new System.EventHandler(this.SupplierLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label supplierLabel;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Label pwdLabel;
         private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label ErrorLabel;
     }
 }

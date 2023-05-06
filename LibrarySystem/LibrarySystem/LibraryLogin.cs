@@ -15,10 +15,14 @@ namespace LibrarySystem
         public LibraryLogin()
         {
             InitializeComponent();
+
+            ErrorLabel.Text = "";
         }
 
         private void cancelButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new Menu().ShowDialog();
             this.Close();
         }
 
@@ -26,17 +30,21 @@ namespace LibrarySystem
         {
             if (txtPassword.Text == "library")
             {
-                LibraryOptions l1 = new LibraryOptions();
-                l1.Show();
+                this.Hide();
+                new LibraryOptions().ShowDialog();
+                this.Close();
             }
             else {
-                MessageBox.Show("Incorrect Password");
+                ErrorLabel.Text = "Incorrect Password";
             }
         }
 
-        private void LibraryLogin_Load(object sender, EventArgs e)
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                okButton_Click(this, new EventArgs());
+            }
         }
     }
 }

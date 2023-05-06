@@ -37,40 +37,39 @@
             // 
             // applicationName
             // 
-            this.applicationName.AutoSize = true;
             this.applicationName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.applicationName.Location = new System.Drawing.Point(64, 32);
+            this.applicationName.Location = new System.Drawing.Point(12, 50);
             this.applicationName.Name = "applicationName";
-            this.applicationName.Size = new System.Drawing.Size(552, 31);
+            this.applicationName.Size = new System.Drawing.Size(460, 31);
             this.applicationName.TabIndex = 0;
-            this.applicationName.Text = "Management Information System Application";
-            this.applicationName.Click += new System.EventHandler(this.label1_Click);
+            this.applicationName.Text = "Library System";
+            this.applicationName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // selectLabel
             // 
-            this.selectLabel.AutoSize = true;
             this.selectLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.selectLabel.Location = new System.Drawing.Point(283, 112);
+            this.selectLabel.Location = new System.Drawing.Point(12, 125);
             this.selectLabel.Name = "selectLabel";
-            this.selectLabel.Size = new System.Drawing.Size(129, 25);
+            this.selectLabel.Size = new System.Drawing.Size(460, 25);
             this.selectLabel.TabIndex = 1;
             this.selectLabel.Text = "Select a User";
+            this.selectLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // libraryButton
             // 
-            this.libraryButton.Location = new System.Drawing.Point(135, 208);
+            this.libraryButton.Location = new System.Drawing.Point(12, 162);
             this.libraryButton.Name = "libraryButton";
-            this.libraryButton.Size = new System.Drawing.Size(75, 23);
+            this.libraryButton.Size = new System.Drawing.Size(150, 23);
             this.libraryButton.TabIndex = 2;
-            this.libraryButton.Text = "Library Staff";
+            this.libraryButton.Text = "Library";
             this.libraryButton.UseVisualStyleBackColor = true;
             this.libraryButton.Click += new System.EventHandler(this.libraryButton_Click);
             // 
             // userButton
             // 
-            this.userButton.Location = new System.Drawing.Point(301, 208);
+            this.userButton.Location = new System.Drawing.Point(166, 162);
             this.userButton.Name = "userButton";
-            this.userButton.Size = new System.Drawing.Size(75, 23);
+            this.userButton.Size = new System.Drawing.Size(150, 23);
             this.userButton.TabIndex = 3;
             this.userButton.Text = "User";
             this.userButton.UseVisualStyleBackColor = true;
@@ -78,9 +77,9 @@
             // 
             // supplierButton
             // 
-            this.supplierButton.Location = new System.Drawing.Point(447, 208);
+            this.supplierButton.Location = new System.Drawing.Point(322, 162);
             this.supplierButton.Name = "supplierButton";
-            this.supplierButton.Size = new System.Drawing.Size(75, 23);
+            this.supplierButton.Size = new System.Drawing.Size(150, 23);
             this.supplierButton.TabIndex = 4;
             this.supplierButton.Text = "Supplier";
             this.supplierButton.UseVisualStyleBackColor = true;
@@ -90,7 +89,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 361);
+            this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.supplierButton);
             this.Controls.Add(this.userButton);
             this.Controls.Add(this.libraryButton);
@@ -98,9 +97,7 @@
             this.Controls.Add(this.applicationName);
             this.Name = "Menu";
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Menu_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -15,32 +15,34 @@ namespace LibrarySystem
         public UserLogin()
         {
             InitializeComponent();
+
+            ErrorLabel.Text = "";
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void cancelButton_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new LibraryOptions().ShowDialog();
             this.Close();
         }
 
         private void okButton_Click(object sender, EventArgs e)
         {
             if (txtPassword.Text == "user") {
-                UserOptions u1 = new UserOptions();
-                u1.Show();
+                this.Hide();
+                new UserOptions().ShowDialog();
+                this.Close();
             } else
             {
-                MessageBox.Show("Incorrect Password");
+                ErrorLabel.Text = "Incorrect Password";
             }
         }
 
-        private void UserLogin_Load(object sender, EventArgs e)
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.KeyCode == Keys.Enter)
+            {
+                okButton_Click(this, new EventArgs());
+            }
         }
     }
 }
