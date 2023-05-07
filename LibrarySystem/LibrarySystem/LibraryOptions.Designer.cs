@@ -36,7 +36,6 @@
             this.lendBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.add1 = new LibrarySystem.Add();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -101,23 +100,14 @@
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
-            // add1
-            // 
-            this.add1.Location = new System.Drawing.Point(15, 32);
-            this.add1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.add1.Name = "add1";
-            this.add1.Size = new System.Drawing.Size(1109, 626);
-            this.add1.TabIndex = 8;
-            // 
             // LibraryOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1244, 1035);
-            this.Controls.Add(this.add1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LibraryOptions";
             this.Text = "Library Options";
             this.menuStrip1.ResumeLayout(false);
@@ -136,6 +126,5 @@
         private System.Windows.Forms.ToolStripMenuItem lendBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
-        private Add add1;
     }
 }
