@@ -67,7 +67,6 @@
             this.searchBookToolStripMenuItem.Name = "searchBookToolStripMenuItem";
             this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.searchBookToolStripMenuItem.Text = "Search Book";
-            this.searchBookToolStripMenuItem.Click += new System.EventHandler(this.searchBookToolStripMenuItem_Click);
             // 
             // borrowBookToolStripMenuItem
             // 

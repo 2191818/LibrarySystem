@@ -23,5 +23,13 @@ namespace LibrarySystem
             new Menu().ShowDialog();
             this.Close();
         }
+
+        private void addBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Add addControl = new Add();
+            addControl.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(addControl);
+        }
     }
 }

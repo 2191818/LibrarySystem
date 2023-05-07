@@ -42,6 +42,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addBookToolStripMenuItem,
             this.searchBookToolStripMenuItem,
@@ -52,69 +53,71 @@
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(933, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1244, 28);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // addBookToolStripMenuItem
             // 
             this.addBookToolStripMenuItem.Name = "addBookToolStripMenuItem";
-            this.addBookToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.addBookToolStripMenuItem.Size = new System.Drawing.Size(89, 24);
             this.addBookToolStripMenuItem.Text = "Add Book";
+            this.addBookToolStripMenuItem.Click += new System.EventHandler(this.addBookToolStripMenuItem_Click);
             // 
             // searchBookToolStripMenuItem
             // 
             this.searchBookToolStripMenuItem.Name = "searchBookToolStripMenuItem";
-            this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
             this.searchBookToolStripMenuItem.Text = "Search Book";
             // 
             // modifyBookToolStripMenuItem
             // 
             this.modifyBookToolStripMenuItem.Name = "modifyBookToolStripMenuItem";
-            this.modifyBookToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.modifyBookToolStripMenuItem.Size = new System.Drawing.Size(108, 24);
             this.modifyBookToolStripMenuItem.Text = "Modify Book";
             // 
             // reserverBookToolStripMenuItem
             // 
             this.reserverBookToolStripMenuItem.Name = "reserverBookToolStripMenuItem";
-            this.reserverBookToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.reserverBookToolStripMenuItem.Size = new System.Drawing.Size(117, 24);
             this.reserverBookToolStripMenuItem.Text = "Reserver Book";
             // 
             // lendBookToolStripMenuItem
             // 
             this.lendBookToolStripMenuItem.Name = "lendBookToolStripMenuItem";
-            this.lendBookToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.lendBookToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.lendBookToolStripMenuItem.Text = "Lend Book";
             // 
             // addMemberToolStripMenuItem
             // 
             this.addMemberToolStripMenuItem.Name = "addMemberToolStripMenuItem";
-            this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.addMemberToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.addMemberToolStripMenuItem.Text = "Add Member";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // add1
             // 
-            this.add1.Location = new System.Drawing.Point(11, 26);
-            this.add1.Margin = new System.Windows.Forms.Padding(2);
+            this.add1.Location = new System.Drawing.Point(15, 32);
+            this.add1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.add1.Name = "add1";
-            this.add1.Size = new System.Drawing.Size(832, 509);
+            this.add1.Size = new System.Drawing.Size(1109, 626);
             this.add1.TabIndex = 8;
             // 
             // LibraryOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 841);
+            this.ClientSize = new System.Drawing.Size(1244, 1035);
             this.Controls.Add(this.add1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "LibraryOptions";
             this.Text = "Library Options";
             this.menuStrip1.ResumeLayout(false);
