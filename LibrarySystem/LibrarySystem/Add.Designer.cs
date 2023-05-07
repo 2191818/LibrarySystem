@@ -46,8 +46,6 @@
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.availabilityTextBox = new System.Windows.Forms.TextBox();
             this.addButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,7 +65,6 @@
             this.groupBox7.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -228,26 +225,6 @@
             this.quantityTextBox.Size = new System.Drawing.Size(248, 22);
             this.quantityTextBox.TabIndex = 0;
             // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.availabilityTextBox);
-            this.groupBox11.Location = new System.Drawing.Point(827, 441);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox11.Size = new System.Drawing.Size(267, 62);
-            this.groupBox11.TabIndex = 14;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Availability";
-            // 
-            // availabilityTextBox
-            // 
-            this.availabilityTextBox.Location = new System.Drawing.Point(7, 20);
-            this.availabilityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.availabilityTextBox.Name = "availabilityTextBox";
-            this.availabilityTextBox.Size = new System.Drawing.Size(253, 22);
-            this.availabilityTextBox.TabIndex = 0;
-            // 
             // addButton
             // 
             this.addButton.Location = new System.Drawing.Point(290, 507);
@@ -274,7 +251,7 @@
             this.availabilityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.booksBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(11, 4);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(1091, 364);
@@ -355,7 +332,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.addButton);
-            this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
@@ -382,8 +358,6 @@
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource1)).EndInit();
             this.ResumeLayout(false);
@@ -408,8 +382,6 @@
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.TextBox quantityTextBox;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.TextBox availabilityTextBox;
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn bookIDDataGridViewTextBoxColumn;

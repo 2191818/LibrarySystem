@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
 
 namespace LibrarySystem
 {
@@ -17,6 +18,7 @@ namespace LibrarySystem
         {
             InitializeComponent();
         }
+
         private void Add_Load(object sender, EventArgs e)
         {
             this.booksTableAdapter.Fill(this.databaseDataSet.Books);
@@ -24,7 +26,6 @@ namespace LibrarySystem
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            // Get values from textboxes
             string title = titleTextBox.Text;
             string author = authorTextBox.Text;
             string publisher = publisherTextBox.Text;
@@ -32,8 +33,9 @@ namespace LibrarySystem
             decimal price = decimal.Parse(priceTextBox.Text);
             int quantity = int.Parse(quantityTextBox.Text);
 
-            // Execute the stored procedure
-            using (SqlConnection conn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Chrome\\LibrarySystem\\LibrarySystem\\LibrarySystem\\Database.mdf;Integrated Security=True"))
+            string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand("AddBook", conn))
                 {
@@ -50,7 +52,6 @@ namespace LibrarySystem
                 }
             }
 
-            // Clear the textboxes
             titleTextBox.Clear();
             authorTextBox.Clear();
             publisherTextBox.Clear();
@@ -59,7 +60,8 @@ namespace LibrarySystem
             quantityTextBox.Clear();
 
             MessageBox.Show("Book added successfully.");
-        }
 
+            this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+        }
     }
 }
