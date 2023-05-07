@@ -1,6 +1,6 @@
 ﻿namespace LibrarySystem
 {
-    partial class BorrowBook
+    partial class borrowBook
     {
         /// <summary> 
         /// Required designer variable.
@@ -41,35 +41,28 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.priceTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.isbnTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.pubTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.availTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.borrowButton = new System.Windows.Forms.Button();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.priceTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.isbnTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.publisherTextBox = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.authorTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.titleTextBox = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bookTextBox = new System.Windows.Forms.TextBox();
-            this.restViewButton = new System.Windows.Forms.Button();
-            this.borrowButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -90,7 +83,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1348, 321);
+            this.dataGridView1.Size = new System.Drawing.Size(1295, 316);
             this.dataGridView1.TabIndex = 0;
             // 
             // databaseDataSet
@@ -171,222 +164,167 @@
             this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
             this.availabilityDataGridViewTextBoxColumn.Width = 150;
             // 
-            // groupBox5
+            // borrowButton
             // 
-            this.groupBox5.Controls.Add(this.priceTextBox);
-            this.groupBox5.Location = new System.Drawing.Point(344, 427);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox5.Size = new System.Drawing.Size(300, 77);
-            this.groupBox5.TabIndex = 22;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Borrow by Price";
+            this.borrowButton.Location = new System.Drawing.Point(295, 524);
+            this.borrowButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.borrowButton.Name = "borrowButton";
+            this.borrowButton.Size = new System.Drawing.Size(716, 135);
+            this.borrowButton.TabIndex = 24;
+            this.borrowButton.Text = "Borrow Book";
+            this.borrowButton.UseVisualStyleBackColor = true;
+            this.borrowButton.Click += new System.EventHandler(this.borrowButton_Click);
             // 
-            // priceTextBox
+            // groupBox10
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(9, 29);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(280, 26);
-            this.priceTextBox.TabIndex = 5;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.isbnTextBox);
-            this.groupBox6.Location = new System.Drawing.Point(34, 427);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox6.Size = new System.Drawing.Size(300, 77);
-            this.groupBox6.TabIndex = 23;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Borrow by ISBN";
-            // 
-            // isbnTextBox
-            // 
-            this.isbnTextBox.Location = new System.Drawing.Point(9, 29);
-            this.isbnTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.isbnTextBox.Name = "isbnTextBox";
-            this.isbnTextBox.Size = new System.Drawing.Size(280, 26);
-            this.isbnTextBox.TabIndex = 6;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.pubTextBox);
-            this.groupBox7.Location = new System.Drawing.Point(962, 341);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox7.Size = new System.Drawing.Size(300, 77);
-            this.groupBox7.TabIndex = 24;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Borrow by Publisher";
-            // 
-            // pubTextBox
-            // 
-            this.pubTextBox.Location = new System.Drawing.Point(9, 29);
-            this.pubTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pubTextBox.Name = "pubTextBox";
-            this.pubTextBox.Size = new System.Drawing.Size(280, 26);
-            this.pubTextBox.TabIndex = 3;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.availTextBox);
-            this.groupBox8.Location = new System.Drawing.Point(962, 427);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox8.Size = new System.Drawing.Size(300, 77);
-            this.groupBox8.TabIndex = 25;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Borrow by Availability";
-            // 
-            // availTextBox
-            // 
-            this.availTextBox.Location = new System.Drawing.Point(9, 29);
-            this.availTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.availTextBox.Name = "availTextBox";
-            this.availTextBox.Size = new System.Drawing.Size(280, 26);
-            this.availTextBox.TabIndex = 7;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.quantityTextBox);
-            this.groupBox4.Location = new System.Drawing.Point(652, 427);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox4.Size = new System.Drawing.Size(300, 77);
-            this.groupBox4.TabIndex = 21;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Borrow by Quantity";
+            this.groupBox10.Controls.Add(this.quantityTextBox);
+            this.groupBox10.Location = new System.Drawing.Point(637, 431);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox10.Size = new System.Drawing.Size(408, 78);
+            this.groupBox10.TabIndex = 23;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Quantity";
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(9, 29);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.quantityTextBox.Location = new System.Drawing.Point(8, 25);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(280, 26);
-            this.quantityTextBox.TabIndex = 8;
+            this.quantityTextBox.Size = new System.Drawing.Size(278, 26);
+            this.quantityTextBox.TabIndex = 0;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.priceTextBox);
+            this.groupBox9.Location = new System.Drawing.Point(325, 431);
+            this.groupBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox9.Size = new System.Drawing.Size(414, 78);
+            this.groupBox9.TabIndex = 22;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Price";
+            // 
+            // priceTextBox
+            // 
+            this.priceTextBox.Location = new System.Drawing.Point(6, 25);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.priceTextBox.Name = "priceTextBox";
+            this.priceTextBox.Size = new System.Drawing.Size(286, 26);
+            this.priceTextBox.TabIndex = 0;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.isbnTextBox);
+            this.groupBox7.Location = new System.Drawing.Point(19, 431);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Size = new System.Drawing.Size(414, 78);
+            this.groupBox7.TabIndex = 21;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "ISBN";
+            // 
+            // isbnTextBox
+            // 
+            this.isbnTextBox.Location = new System.Drawing.Point(8, 25);
+            this.isbnTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.isbnTextBox.Name = "isbnTextBox";
+            this.isbnTextBox.Size = new System.Drawing.Size(284, 26);
+            this.isbnTextBox.TabIndex = 0;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.publisherTextBox);
+            this.groupBox6.Location = new System.Drawing.Point(937, 348);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Size = new System.Drawing.Size(414, 78);
+            this.groupBox6.TabIndex = 20;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Publisher";
+            // 
+            // publisherTextBox
+            // 
+            this.publisherTextBox.Location = new System.Drawing.Point(8, 25);
+            this.publisherTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.publisherTextBox.Name = "publisherTextBox";
+            this.publisherTextBox.Size = new System.Drawing.Size(284, 26);
+            this.publisherTextBox.TabIndex = 0;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.titleTextBox);
+            this.groupBox4.Location = new System.Drawing.Point(227, 349);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(404, 78);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Title";
+            // 
+            // titleTextBox
+            // 
+            this.titleTextBox.Location = new System.Drawing.Point(8, 25);
+            this.titleTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(284, 26);
+            this.titleTextBox.TabIndex = 2;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.authorTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(652, 341);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Location = new System.Drawing.Point(631, 348);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(300, 77);
-            this.groupBox3.TabIndex = 20;
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(414, 78);
+            this.groupBox3.TabIndex = 18;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Borrow by Author";
+            this.groupBox3.Text = "Author";
             // 
             // authorTextBox
             // 
-            this.authorTextBox.Location = new System.Drawing.Point(9, 29);
-            this.authorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.authorTextBox.Location = new System.Drawing.Point(6, 25);
+            this.authorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.authorTextBox.Name = "authorTextBox";
-            this.authorTextBox.Size = new System.Drawing.Size(280, 26);
-            this.authorTextBox.TabIndex = 4;
+            this.authorTextBox.Size = new System.Drawing.Size(286, 26);
+            this.authorTextBox.TabIndex = 3;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.titleTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(344, 341);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(300, 77);
-            this.groupBox2.TabIndex = 19;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Borrow by Title";
-            // 
-            // titleTextBox
-            // 
-            this.titleTextBox.Location = new System.Drawing.Point(9, 29);
-            this.titleTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(280, 26);
-            this.titleTextBox.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.bookTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(34, 341);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(300, 77);
-            this.groupBox1.TabIndex = 18;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Borrow by Book ID";
-            // 
-            // bookTextBox
-            // 
-            this.bookTextBox.Location = new System.Drawing.Point(9, 29);
-            this.bookTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.bookTextBox.Name = "bookTextBox";
-            this.bookTextBox.Size = new System.Drawing.Size(280, 26);
-            this.bookTextBox.TabIndex = 1;
-            // 
-            // restViewButton
-            // 
-            this.restViewButton.Location = new System.Drawing.Point(34, 514);
-            this.restViewButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.restViewButton.Name = "restViewButton";
-            this.restViewButton.Size = new System.Drawing.Size(609, 77);
-            this.restViewButton.TabIndex = 17;
-            this.restViewButton.Text = "Reset View";
-            this.restViewButton.UseVisualStyleBackColor = true;
-            // 
-            // borrowButton
-            // 
-            this.borrowButton.Location = new System.Drawing.Point(652, 514);
-            this.borrowButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.borrowButton.Name = "borrowButton";
-            this.borrowButton.Size = new System.Drawing.Size(609, 77);
-            this.borrowButton.TabIndex = 16;
-            this.borrowButton.Text = "Borrow";
-            this.borrowButton.UseVisualStyleBackColor = true;
-            // 
-            // BorrowBook
+            // borrowBook
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.borrowButton);
+            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.restViewButton);
-            this.Controls.Add(this.borrowButton);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "BorrowBook";
-            this.Size = new System.Drawing.Size(1350, 672);
+            this.Name = "borrowBook";
+            this.Size = new System.Drawing.Size(1327, 689);
+            this.Load += new System.EventHandler(this.borrowBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -405,23 +343,18 @@
         private System.Windows.Forms.BindingSource booksBindingSource;
         private DatabaseDataSet databaseDataSet;
         private DatabaseDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.TextBox priceTextBox;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.TextBox isbnTextBox;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.TextBox pubTextBox;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.TextBox availTextBox;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button borrowButton;
+        private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.TextBox quantityTextBox;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.TextBox priceTextBox;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.TextBox isbnTextBox;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.TextBox publisherTextBox;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.TextBox titleTextBox;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox authorTextBox;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox titleTextBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox bookTextBox;
-        private System.Windows.Forms.Button restViewButton;
-        private System.Windows.Forms.Button borrowButton;
     }
 }

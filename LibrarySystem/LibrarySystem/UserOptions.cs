@@ -37,5 +37,13 @@ namespace LibrarySystem
             this.Controls.Clear();
             this.Controls.Add(search);
         }
+
+        private void borrowBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            borrowBook borrowControl = new borrowBook();
+            borrowControl.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(borrowControl);
+        }
     }
 }
