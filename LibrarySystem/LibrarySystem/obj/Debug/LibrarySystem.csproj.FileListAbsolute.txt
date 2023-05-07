@@ -60,3 +60,6 @@ D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.Gene
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.csproj.CoreCompileInputs.cache
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.exe
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.pdb
+D:\LibrarySystem\LibrarySystem\LibrarySystem\bin\Debug\Database.mdf
+D:\LibrarySystem\LibrarySystem\LibrarySystem\bin\Debug\Database_log.ldf
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Search.resources

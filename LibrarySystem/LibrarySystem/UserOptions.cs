@@ -23,5 +23,12 @@ namespace LibrarySystem
             new Menu().ShowDialog();
             this.Close();
         }
+
+        private void UserOptions_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Books' table. You can move, or remove it, as needed.
+            this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+
+        }
     }
 }
