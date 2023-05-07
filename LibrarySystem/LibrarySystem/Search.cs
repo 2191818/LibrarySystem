@@ -42,7 +42,7 @@ namespace LibrarySystem
                 {
                     this.booksTableAdapter.FillByBook(this.databaseDataSet.Books, int.Parse(this.bookTextBox.Text));
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Book ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -52,9 +52,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByTitle(this.databaseDataSet.Books, int.Parse(this.titleTextBox.Text));
+                    this.booksTableAdapter.FillBySearchTitle(this.databaseDataSet.Books, this.titleTextBox.Text);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Title.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -64,9 +64,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByAuthor(this.databaseDataSet.Books, int.Parse(this.authorTextBox.Text));
+                    this.booksTableAdapter.FillBySearchAuthor(this.databaseDataSet.Books, this.authorTextBox.Text);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Author.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -76,9 +76,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByPublisher(this.databaseDataSet.Books, int.Parse(this.pubTextBox.Text));
+                    this.booksTableAdapter.FillBySearchPub(this.databaseDataSet.Books, this.pubTextBox.Text);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Publisher.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -88,9 +88,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByISBN(this.databaseDataSet.Books, int.Parse(this.isbnTextBox.Text));
+                    this.booksTableAdapter.FillBySearchISBN(this.databaseDataSet.Books, this.isbnTextBox.Text);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid ISBN.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -100,9 +100,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByPrice(this.databaseDataSet.Books, int.Parse(this.priceTextBox.Text));
+                    this.booksTableAdapter.FillBySearchPrice(this.databaseDataSet.Books, decimal.Parse(this.priceTextBox.Text));
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Price.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -112,9 +112,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByQuantity(this.databaseDataSet.Books, int.Parse(this.quantityTextBox.Text));
+                    this.booksTableAdapter.FillBySearchQuan(this.databaseDataSet.Books, int.Parse(this.quantityTextBox.Text));
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Quantity.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
@@ -124,9 +124,9 @@ namespace LibrarySystem
             {
                 try
                 {
-                    this.booksTableAdapter.FillByAvailability(this.databaseDataSet.Books, int.Parse(this.availTextBox.Text));
+                    this.booksTableAdapter.FillBySearchAvail(this.databaseDataSet.Books, this.availTextBox.Text);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     MessageBox.Show("Invalid Availability.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;

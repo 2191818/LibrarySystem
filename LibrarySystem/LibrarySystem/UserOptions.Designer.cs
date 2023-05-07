@@ -67,6 +67,7 @@
             this.searchBookToolStripMenuItem.Name = "searchBookToolStripMenuItem";
             this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.searchBookToolStripMenuItem.Text = "Search Book";
+            this.searchBookToolStripMenuItem.Click += new System.EventHandler(this.searchBookToolStripMenuItem_Click);
             // 
             // borrowBookToolStripMenuItem
             // 
@@ -118,7 +119,7 @@
             // add1
             // 
             this.add1.Location = new System.Drawing.Point(22, 27);
-            this.add1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.add1.Margin = new System.Windows.Forms.Padding(1);
             this.add1.Name = "add1";
             this.add1.Size = new System.Drawing.Size(0, 0);
             this.add1.TabIndex = 7;

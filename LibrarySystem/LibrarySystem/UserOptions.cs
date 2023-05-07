@@ -28,7 +28,14 @@ namespace LibrarySystem
         {
             // TODO: This line of code loads data into the 'databaseDataSet.Books' table. You can move, or remove it, as needed.
             this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+        }
 
+        private void searchBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();
+            search.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(search);
         }
     }
 }

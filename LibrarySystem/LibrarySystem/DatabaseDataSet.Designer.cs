@@ -6379,52 +6379,52 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "dbo.SelectAuthor";
+            this._commandCollection[1].CommandText = "dbo.SelectBookId";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Author", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "dbo.SelectAvailability";
+            this._commandCollection[2].CommandText = "dbo.SearchAuthor";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Availability", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Author", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "dbo.SelectBookId";
+            this._commandCollection[3].CommandText = "dbo.SearchAvail";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@BookID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Availability", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "dbo.SelectISBN";
+            this._commandCollection[4].CommandText = "dbo.SearchISBN";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ISBN", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ISBN", global::System.Data.SqlDbType.NVarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[5] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[5].Connection = this.Connection;
-            this._commandCollection[5].CommandText = "dbo.SelectPrice";
+            this._commandCollection[5].CommandText = "dbo.SearchPrice";
             this._commandCollection[5].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Price", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Price", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 10, 2, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[6] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[6].Connection = this.Connection;
-            this._commandCollection[6].CommandText = "dbo.SelectPublisher";
+            this._commandCollection[6].CommandText = "dbo.SearchPub";
             this._commandCollection[6].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Publisher", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[6].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Publisher", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[7].Connection = this.Connection;
-            this._commandCollection[7].CommandText = "dbo.SelectQuantity";
+            this._commandCollection[7].CommandText = "dbo.SearchQuan";
             this._commandCollection[7].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[7].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quantity", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[8] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[8].Connection = this.Connection;
-            this._commandCollection[8].CommandText = "dbo.SelectTitle";
+            this._commandCollection[8].CommandText = "dbo.SearchTitle";
             this._commandCollection[8].CommandType = global::System.Data.CommandType.StoredProcedure;
             this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Title", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[8].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Title", global::System.Data.SqlDbType.NVarChar, 100, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6455,80 +6455,8 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByAuthor(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Author) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((Author.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Author.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByAuthor(global::System.Nullable<int> Author) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((Author.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Author.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByAvailability(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Availability) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((Availability.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Availability.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            if ((this.ClearBeforeFill == true)) {
-                dataTable.Clear();
-            }
-            int returnValue = this.Adapter.Fill(dataTable);
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByAvailability(global::System.Nullable<int> Availability) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
-            if ((Availability.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Availability.Value));
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int FillByBook(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> BookID) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((BookID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(BookID.Value));
             }
@@ -6547,7 +6475,7 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual DatabaseDataSet.BooksDataTable GetDataByBook(global::System.Nullable<int> BookID) {
-            this.Adapter.SelectCommand = this.CommandCollection[3];
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((BookID.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(BookID.Value));
             }
@@ -6563,13 +6491,13 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByISBN(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> ISBN) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
-            if ((ISBN.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ISBN.Value));
+        public virtual int FillBySearchAuthor(DatabaseDataSet.BooksDataTable dataTable, string Author) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((Author == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Author));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6582,13 +6510,13 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByISBN(global::System.Nullable<int> ISBN) {
-            this.Adapter.SelectCommand = this.CommandCollection[4];
-            if ((ISBN.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(ISBN.Value));
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchAuthor(string Author) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((Author == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Author));
             }
             DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
             this.Adapter.Fill(dataTable);
@@ -6599,10 +6527,82 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByPrice(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Price) {
+        public virtual int FillBySearchAvail(DatabaseDataSet.BooksDataTable dataTable, string Availability) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((Availability == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Availability));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchAvail(string Availability) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((Availability == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Availability));
+            }
+            DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBySearchISBN(DatabaseDataSet.BooksDataTable dataTable, string ISBN) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            if ((ISBN == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(ISBN));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchISBN(string ISBN) {
+            this.Adapter.SelectCommand = this.CommandCollection[4];
+            if ((ISBN == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(ISBN));
+            }
+            DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBySearchPrice(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<decimal> Price) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((Price.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Price.Value));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((decimal)(Price.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -6618,10 +6618,10 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByPrice(global::System.Nullable<int> Price) {
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchPrice(global::System.Nullable<decimal> Price) {
             this.Adapter.SelectCommand = this.CommandCollection[5];
             if ((Price.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Price.Value));
+                this.Adapter.SelectCommand.Parameters[1].Value = ((decimal)(Price.Value));
             }
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -6635,13 +6635,13 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByPublisher(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Publisher) {
+        public virtual int FillBySearchPub(DatabaseDataSet.BooksDataTable dataTable, string Publisher) {
             this.Adapter.SelectCommand = this.CommandCollection[6];
-            if ((Publisher.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Publisher.Value));
+            if ((Publisher == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Publisher));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6654,13 +6654,13 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByPublisher(global::System.Nullable<int> Publisher) {
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchPub(string Publisher) {
             this.Adapter.SelectCommand = this.CommandCollection[6];
-            if ((Publisher.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Publisher.Value));
+            if ((Publisher == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Publisher));
             }
             DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
             this.Adapter.Fill(dataTable);
@@ -6671,7 +6671,7 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByQuantity(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Quantity) {
+        public virtual int FillBySearchQuan(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Quantity) {
             this.Adapter.SelectCommand = this.CommandCollection[7];
             if ((Quantity.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Quantity.Value));
@@ -6690,7 +6690,7 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByQuantity(global::System.Nullable<int> Quantity) {
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchQuan(global::System.Nullable<int> Quantity) {
             this.Adapter.SelectCommand = this.CommandCollection[7];
             if ((Quantity.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Quantity.Value));
@@ -6707,13 +6707,13 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillByTitle(DatabaseDataSet.BooksDataTable dataTable, global::System.Nullable<int> Title) {
+        public virtual int FillBySearchTitle(DatabaseDataSet.BooksDataTable dataTable, string Title) {
             this.Adapter.SelectCommand = this.CommandCollection[8];
-            if ((Title.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Title.Value));
+            if ((Title == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Title));
             }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6726,13 +6726,13 @@ SELECT BookID, Title, Author, Publisher, ISBN, Price, Quantity, Availability FRO
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual DatabaseDataSet.BooksDataTable GetDataByTitle(global::System.Nullable<int> Title) {
+        public virtual DatabaseDataSet.BooksDataTable GetDataBySearchTitle(string Title) {
             this.Adapter.SelectCommand = this.CommandCollection[8];
-            if ((Title.HasValue == true)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Title.Value));
+            if ((Title == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Title));
             }
             DatabaseDataSet.BooksDataTable dataTable = new DatabaseDataSet.BooksDataTable();
             this.Adapter.Fill(dataTable);
