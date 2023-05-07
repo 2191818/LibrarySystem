@@ -36,6 +36,7 @@
             this.lendBookToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addMemberToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.add1 = new LibrarySystem.Add();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(933, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,11 +99,20 @@
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
+            // add1
+            // 
+            this.add1.Location = new System.Drawing.Point(11, 26);
+            this.add1.Margin = new System.Windows.Forms.Padding(2);
+            this.add1.Name = "add1";
+            this.add1.Size = new System.Drawing.Size(832, 509);
+            this.add1.TabIndex = 8;
+            // 
             // LibraryOptions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(933, 841);
+            this.Controls.Add(this.add1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "LibraryOptions";
@@ -123,5 +133,6 @@
         private System.Windows.Forms.ToolStripMenuItem lendBookToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addMemberToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private Add add1;
     }
 }

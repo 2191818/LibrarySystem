@@ -48,7 +48,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.searchBookToolStripMenuItem,
@@ -58,38 +57,40 @@
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1401, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(934, 24);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // searchBookToolStripMenuItem
             // 
             this.searchBookToolStripMenuItem.Name = "searchBookToolStripMenuItem";
-            this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(126, 29);
+            this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.searchBookToolStripMenuItem.Text = "Search Book";
+            this.searchBookToolStripMenuItem.Click += new System.EventHandler(this.searchBookToolStripMenuItem_Click);
             // 
             // borrowBookToolStripMenuItem
             // 
             this.borrowBookToolStripMenuItem.Name = "borrowBookToolStripMenuItem";
-            this.borrowBookToolStripMenuItem.Size = new System.Drawing.Size(131, 29);
+            this.borrowBookToolStripMenuItem.Size = new System.Drawing.Size(87, 22);
             this.borrowBookToolStripMenuItem.Text = "Borrow Book";
             // 
             // returnBookToolStripMenuItem
             // 
             this.returnBookToolStripMenuItem.Name = "returnBookToolStripMenuItem";
-            this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
+            this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.returnBookToolStripMenuItem.Text = "Return Book";
             // 
             // applyMembershipToolStripMenuItem
             // 
             this.applyMembershipToolStripMenuItem.Name = "applyMembershipToolStripMenuItem";
-            this.applyMembershipToolStripMenuItem.Size = new System.Drawing.Size(180, 29);
+            this.applyMembershipToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
             this.applyMembershipToolStripMenuItem.Text = "Apply Membership";
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(85, 29);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -109,15 +110,16 @@
             // 
             // search1
             // 
-            this.search1.Location = new System.Drawing.Point(33, 42);
-            this.search1.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.search1.Location = new System.Drawing.Point(22, 27);
+            this.search1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.search1.Name = "search1";
             this.search1.Size = new System.Drawing.Size(0, 0);
             this.search1.TabIndex = 6;
             // 
             // add1
             // 
-            this.add1.Location = new System.Drawing.Point(33, 42);
+            this.add1.Location = new System.Drawing.Point(22, 27);
+            this.add1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.add1.Name = "add1";
             this.add1.Size = new System.Drawing.Size(0, 0);
             this.add1.TabIndex = 7;
@@ -128,14 +130,13 @@
             // 
             // UserOptions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1401, 1050);
+            this.ClientSize = new System.Drawing.Size(934, 682);
             this.Controls.Add(this.add1);
             this.Controls.Add(this.search1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "UserOptions";
             this.Text = "User Options";
             this.Load += new System.EventHandler(this.UserOptions_Load);
