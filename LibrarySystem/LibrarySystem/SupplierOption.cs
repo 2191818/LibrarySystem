@@ -23,5 +23,21 @@ namespace LibrarySystem
             new Menu().ShowDialog();
             this.Close();
         }
+
+        private void searchBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Search search = new Search();
+            search.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(search);
+        }
+
+        private void sellBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sell sell = new Sell();
+            sell.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(sell);
+        }
     }
 }

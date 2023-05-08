@@ -52,12 +52,14 @@
             this.searchBookToolStripMenuItem.Name = "searchBookToolStripMenuItem";
             this.searchBookToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.searchBookToolStripMenuItem.Text = "Search Book";
+            this.searchBookToolStripMenuItem.Click += new System.EventHandler(this.searchBookToolStripMenuItem_Click);
             // 
             // sellBookToolStripMenuItem
             // 
             this.sellBookToolStripMenuItem.Name = "sellBookToolStripMenuItem";
             this.sellBookToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.sellBookToolStripMenuItem.Text = "Sell Book";
+            this.sellBookToolStripMenuItem.Click += new System.EventHandler(this.sellBookToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
