@@ -76,11 +76,11 @@
     <Compile Include="AddMember.Designer.cs">
       <DependentUpon>AddMember.cs</DependentUpon>
     </Compile>
-    <Compile Include="applyMembership.cs">
+    <Compile Include="AddUsers.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="applyMembership.Designer.cs">
-      <DependentUpon>applyMembership.cs</DependentUpon>
+    <Compile Include="AddUsers.Designer.cs">
+      <DependentUpon>AddUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="BorrowBook.cs">
       <SubType>UserControl</SubType>
@@ -182,8 +182,8 @@
     <EmbeddedResource Include="AddMember.resx">
       <DependentUpon>AddMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="applyMembership.resx">
-      <DependentUpon>applyMembership.cs</DependentUpon>
+    <EmbeddedResource Include="AddUsers.resx">
+      <DependentUpon>AddUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowBook.resx">
       <DependentUpon>BorrowBook.cs</DependentUpon>

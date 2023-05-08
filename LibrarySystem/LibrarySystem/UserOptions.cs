@@ -56,7 +56,7 @@ namespace LibrarySystem
 
         private void applyMembershipToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            applyMembership applyControl = new applyMembership();
+            AddUsers applyControl = new AddUsers();
             applyControl.Dock = DockStyle.Fill;
             this.Controls.Clear();
             this.Controls.Add(applyControl);
