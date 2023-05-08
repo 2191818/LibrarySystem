@@ -33,29 +33,45 @@ namespace LibrarySystem
             }
 
             int bookID = (int)dataGridView1.SelectedRows[0].Cells["bookIDDataGridViewTextBoxColumn"].Value;
-            int memberID = int.Parse(memberIDTextBox.Text);
+            int userID = int.Parse(userIDTextBox.Text);
             DateTime transactionDate = DateTime.Now;
 
             string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand("BorrowBook", conn))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@BookID", bookID);
-                    cmd.Parameters.AddWithValue("@MemberID", memberID);
-                    cmd.Parameters.AddWithValue("@TransactionDate", transactionDate);
+                    using (SqlCommand cmd = new SqlCommand("BorrowBook", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@BookID", bookID);
+                        cmd.Parameters.AddWithValue("@UserID", userID);
+                        cmd.Parameters.AddWithValue("@TransactionDate", transactionDate);
 
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+                MessageBox.Show("Book borrowed successfully.");
+                this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+            }
+            catch (SqlException ex)
+            {
+                if (ex.Number == 50000) // check if custom error number is thrown
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                else
+                {
+                    MessageBox.Show("Error borrowing book: " + ex.Message);
                 }
             }
-
-            MessageBox.Show("Book borrowed successfully.");
-
-            this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error borrowing book: " + ex.Message);
+            }
         }
-
     }
 }

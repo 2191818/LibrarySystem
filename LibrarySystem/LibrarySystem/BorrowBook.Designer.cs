@@ -43,7 +43,7 @@
             this.booksTableAdapter = new LibrarySystem.DatabaseDataSetTableAdapters.BooksTableAdapter();
             this.borrowButton = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.memberIDTextBox = new System.Windows.Forms.TextBox();
+            this.userIDTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
@@ -163,7 +163,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.memberIDTextBox);
+            this.groupBox3.Controls.Add(this.userIDTextBox);
             this.groupBox3.Location = new System.Drawing.Point(425, 348);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
@@ -171,15 +171,15 @@
             this.groupBox3.Size = new System.Drawing.Size(267, 62);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Member ID";
+            this.groupBox3.Text = "User ID";
             // 
-            // memberIDTextBox
+            // userIDTextBox
             // 
-            this.memberIDTextBox.Location = new System.Drawing.Point(5, 20);
-            this.memberIDTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.memberIDTextBox.Name = "memberIDTextBox";
-            this.memberIDTextBox.Size = new System.Drawing.Size(255, 22);
-            this.memberIDTextBox.TabIndex = 3;
+            this.userIDTextBox.Location = new System.Drawing.Point(5, 20);
+            this.userIDTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userIDTextBox.Name = "userIDTextBox";
+            this.userIDTextBox.Size = new System.Drawing.Size(255, 22);
+            this.userIDTextBox.TabIndex = 3;
             // 
             // borrowBook
             // 
@@ -217,6 +217,6 @@
         private DatabaseDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
         private System.Windows.Forms.Button borrowButton;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox memberIDTextBox;
+        private System.Windows.Forms.TextBox userIDTextBox;
     }
 }

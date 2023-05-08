@@ -30,38 +30,57 @@ namespace LibrarySystem
             string author = authorTextBox.Text;
             string publisher = publisherTextBox.Text;
             string isbn = isbnTextBox.Text;
-            decimal price = decimal.Parse(priceTextBox.Text);
-            int quantity = int.Parse(quantityTextBox.Text);
+
+            decimal price;
+            if (!decimal.TryParse(priceTextBox.Text, out price) || price < 0)
+            {
+                MessageBox.Show("Please enter a valid, non-negative price.");
+                return;
+            }
+
+            int quantity;
+            if (!int.TryParse(quantityTextBox.Text, out quantity) || quantity < 0)
+            {
+                MessageBox.Show("Please enter a valid, non-negative quantity.");
+                return;
+            }
 
             string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                using (SqlCommand cmd = new SqlCommand("AddBook", conn))
+                using (SqlConnection conn = new SqlConnection(connectionString))
                 {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@Title", title);
-                    cmd.Parameters.AddWithValue("@Author", author);
-                    cmd.Parameters.AddWithValue("@Publisher", publisher);
-                    cmd.Parameters.AddWithValue("@ISBN", isbn);
-                    cmd.Parameters.AddWithValue("@Price", price);
-                    cmd.Parameters.AddWithValue("@Quantity", quantity);
+                    using (SqlCommand cmd = new SqlCommand("AddBook", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@Title", title);
+                        cmd.Parameters.AddWithValue("@Author", author);
+                        cmd.Parameters.AddWithValue("@Publisher", publisher);
+                        cmd.Parameters.AddWithValue("@ISBN", isbn);
+                        cmd.Parameters.AddWithValue("@Price", price);
+                        cmd.Parameters.AddWithValue("@Quantity", quantity);
 
-                    conn.Open();
-                    cmd.ExecuteNonQuery();
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
+
+                titleTextBox.Clear();
+                authorTextBox.Clear();
+                publisherTextBox.Clear();
+                isbnTextBox.Clear();
+                priceTextBox.Clear();
+                quantityTextBox.Clear();
+
+                MessageBox.Show("Book added successfully.");
+
+                this.booksTableAdapter.Fill(this.databaseDataSet.Books);
             }
-
-            titleTextBox.Clear();
-            authorTextBox.Clear();
-            publisherTextBox.Clear();
-            isbnTextBox.Clear();
-            priceTextBox.Clear();
-            quantityTextBox.Clear();
-
-            MessageBox.Show("Book added successfully.");
-
-            this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error adding book: " + ex.Message);
+            }
         }
     }
 }
