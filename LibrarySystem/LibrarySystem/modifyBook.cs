@@ -181,11 +181,7 @@ namespace LibrarySystem
 
         private void modifyBook_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
+            this.booksTableAdapter.Fill(this.databaseDataSet.Books);
 
         }
     }
