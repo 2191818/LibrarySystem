@@ -93,28 +93,29 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1425, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1603, 33);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(64, 32);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(93, 32);
             this.logOutToolStripMenuItem.Text = "Log Out";
             // 
             // dataGridView1
@@ -127,11 +128,12 @@
             this.passwordDataGridViewTextBoxColumn,
             this.userTypeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usersBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(388, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(436, 64);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(553, 134);
+            this.dataGridView1.Size = new System.Drawing.Size(622, 168);
             this.dataGridView1.TabIndex = 6;
             // 
             // userIDDataGridViewTextBoxColumn
@@ -174,11 +176,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.usernameTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(281, 287);
+            this.groupBox2.Location = new System.Drawing.Point(317, 343);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(172, 62);
+            this.groupBox2.Size = new System.Drawing.Size(194, 78);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Username";
@@ -186,64 +188,66 @@
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(30, 21);
+            this.usernameTextBox.Location = new System.Drawing.Point(6, 26);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(89, 22);
+            this.usernameTextBox.Size = new System.Drawing.Size(182, 26);
             this.usernameTextBox.TabIndex = 0;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.passwordTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(565, 287);
+            this.groupBox3.Location = new System.Drawing.Point(637, 343);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(172, 62);
+            this.groupBox3.Size = new System.Drawing.Size(194, 78);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Password";
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(30, 21);
+            this.passwordTextBox.Location = new System.Drawing.Point(6, 26);
             this.passwordTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(89, 22);
+            this.passwordTextBox.Size = new System.Drawing.Size(182, 26);
             this.passwordTextBox.TabIndex = 0;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.userTypeTextBox);
-            this.groupBox4.Location = new System.Drawing.Point(857, 287);
+            this.groupBox4.Location = new System.Drawing.Point(965, 343);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(172, 62);
+            this.groupBox4.Size = new System.Drawing.Size(194, 78);
             this.groupBox4.TabIndex = 10;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "User Type";
             // 
             // userTypeTextBox
             // 
-            this.userTypeTextBox.Location = new System.Drawing.Point(30, 21);
+            this.userTypeTextBox.Location = new System.Drawing.Point(6, 26);
             this.userTypeTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userTypeTextBox.Name = "userTypeTextBox";
-            this.userTypeTextBox.Size = new System.Drawing.Size(89, 22);
+            this.userTypeTextBox.Size = new System.Drawing.Size(182, 26);
             this.userTypeTextBox.TabIndex = 0;
             // 
             // addUserButton
             // 
-            this.addUserButton.Location = new System.Drawing.Point(574, 415);
+            this.addUserButton.Location = new System.Drawing.Point(627, 498);
+            this.addUserButton.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addUserButton.Name = "addUserButton";
-            this.addUserButton.Size = new System.Drawing.Size(189, 84);
+            this.addUserButton.Size = new System.Drawing.Size(213, 105);
             this.addUserButton.TabIndex = 11;
             this.addUserButton.Text = "Add User";
             this.addUserButton.UseVisualStyleBackColor = true;
+            this.addUserButton.Click += new System.EventHandler(this.addUserButton_Click);
             // 
             // AddUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.addUserButton);
             this.Controls.Add(this.groupBox4);
@@ -253,7 +257,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddUsers";
-            this.Size = new System.Drawing.Size(1425, 575);
+            this.Size = new System.Drawing.Size(1603, 719);
             this.Load += new System.EventHandler(this.applyMembership_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();

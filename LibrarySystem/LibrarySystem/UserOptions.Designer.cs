@@ -85,8 +85,8 @@
             // applyMembershipToolStripMenuItem
             // 
             this.applyMembershipToolStripMenuItem.Name = "applyMembershipToolStripMenuItem";
-            this.applyMembershipToolStripMenuItem.Size = new System.Drawing.Size(180, 29);
-            this.applyMembershipToolStripMenuItem.Text = "Apply Membership";
+            this.applyMembershipToolStripMenuItem.Size = new System.Drawing.Size(102, 29);
+            this.applyMembershipToolStripMenuItem.Text = "Add User";
             this.applyMembershipToolStripMenuItem.Click += new System.EventHandler(this.applyMembershipToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
