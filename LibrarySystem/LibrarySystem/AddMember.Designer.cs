@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.databaseDataSet1 = new LibrarySystem.DatabaseDataSet();
+            this.databaseDataSet = new LibrarySystem.DatabaseDataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.membersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.membersTableAdapter = new LibrarySystem.DatabaseDataSetTableAdapters.MembersTableAdapter();
@@ -56,7 +56,7 @@
             this.membershipStatusTextBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.addMemberButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -70,8 +70,8 @@
             // 
             // databaseDataSet1
             // 
-            this.databaseDataSet1.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // dataGridView1
             // 
@@ -96,7 +96,7 @@
             // membersBindingSource
             // 
             this.membersBindingSource.DataMember = "Members";
-            this.membersBindingSource.DataSource = this.databaseDataSet1;
+            this.membersBindingSource.DataSource = this.databaseDataSet;
             // 
             // membersTableAdapter
             // 
@@ -313,7 +313,7 @@
             this.Name = "addMember";
             this.Size = new System.Drawing.Size(1189, 797);
             this.Load += new System.EventHandler(this.addMember_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
@@ -336,7 +336,7 @@
 
         #endregion
 
-        private DatabaseDataSet databaseDataSet1;
+        private DatabaseDataSet databaseDataSet;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn memberIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn firstNameDataGridViewTextBoxColumn;

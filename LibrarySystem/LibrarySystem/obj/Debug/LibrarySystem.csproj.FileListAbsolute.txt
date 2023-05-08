@@ -134,3 +134,5 @@ D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Add.resourc
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.borrowBook.resources
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.returnBook.resources
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Sell.resources
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.addMember.resources
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.applyMembership.resources
