@@ -55,7 +55,10 @@ namespace LibrarySystem
 
         private void reserverBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            reserveBook reserveBookControl = new reserveBook();
+            reserveBookControl.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(reserveBookControl);
         }
 
         private void lendBookToolStripMenuItem_Click(object sender, EventArgs e)
