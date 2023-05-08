@@ -53,5 +53,13 @@ namespace LibrarySystem
             this.Controls.Clear();
             this.Controls.Add(returnControl);
         }
+
+        private void applyMembershipToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            applyMembership applyControl = new applyMembership();
+            applyControl.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(applyControl);
+        }
     }
 }

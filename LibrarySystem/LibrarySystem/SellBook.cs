@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class SellBook : UserControl
+    public partial class sellBook : UserControl
     {
-        public SellBook()
+        public sellBook()
         {
             InitializeComponent();
         }

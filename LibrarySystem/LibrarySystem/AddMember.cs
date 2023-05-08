@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class AddMember : UserControl
+    public partial class addMember : UserControl
     {
-        public AddMember()
+        public addMember()
         {
             InitializeComponent();
+        }
+
+        private void addMember_Load(object sender, EventArgs e)
+        {
+            this.membersTableAdapter.Fill(this.databaseDataSet.Members);
         }
     }
 }
