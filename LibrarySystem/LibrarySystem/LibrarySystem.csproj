@@ -96,11 +96,29 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="lendBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="lendBook.Designer.cs">
+      <DependentUpon>lendBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="LibraryOptions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LibraryOptions.Designer.cs">
       <DependentUpon>LibraryOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modifyBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="modifyBook.Designer.cs">
+      <DependentUpon>modifyBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reserveBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="reserveBook.Designer.cs">
+      <DependentUpon>reserveBook.cs</DependentUpon>
     </Compile>
     <Compile Include="returnBook.cs">
       <SubType>UserControl</SubType>
@@ -170,8 +188,17 @@
     <EmbeddedResource Include="BorrowBook.resx">
       <DependentUpon>BorrowBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="lendBook.resx">
+      <DependentUpon>lendBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LibraryOptions.resx">
       <DependentUpon>LibraryOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifyBook.resx">
+      <DependentUpon>modifyBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reserveBook.resx">
+      <DependentUpon>reserveBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="returnBook.resx">
       <DependentUpon>returnBook.cs</DependentUpon>

@@ -47,5 +47,23 @@ namespace LibrarySystem
             this.Controls.Clear();
             this.Controls.Add(addmemberControl);
         }
+
+        private void modifyBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void reserverBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lendBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            lendBook lendControl = new lendBook();
+            lendControl.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(lendControl);
+        }
     }
 }

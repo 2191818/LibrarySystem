@@ -73,5 +73,15 @@ namespace LibrarySystem
                 MessageBox.Show("Error borrowing book: " + ex.Message);
             }
         }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

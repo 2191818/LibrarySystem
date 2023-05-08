@@ -77,18 +77,21 @@
             this.modifyBookToolStripMenuItem.Name = "modifyBookToolStripMenuItem";
             this.modifyBookToolStripMenuItem.Size = new System.Drawing.Size(131, 29);
             this.modifyBookToolStripMenuItem.Text = "Modify Book";
+            this.modifyBookToolStripMenuItem.Click += new System.EventHandler(this.modifyBookToolStripMenuItem_Click);
             // 
             // reserverBookToolStripMenuItem
             // 
             this.reserverBookToolStripMenuItem.Name = "reserverBookToolStripMenuItem";
             this.reserverBookToolStripMenuItem.Size = new System.Drawing.Size(134, 29);
             this.reserverBookToolStripMenuItem.Text = "Reserve Book";
+            this.reserverBookToolStripMenuItem.Click += new System.EventHandler(this.reserverBookToolStripMenuItem_Click);
             // 
             // lendBookToolStripMenuItem
             // 
             this.lendBookToolStripMenuItem.Name = "lendBookToolStripMenuItem";
             this.lendBookToolStripMenuItem.Size = new System.Drawing.Size(112, 29);
             this.lendBookToolStripMenuItem.Text = "Lend Book";
+            this.lendBookToolStripMenuItem.Click += new System.EventHandler(this.lendBookToolStripMenuItem_Click);
             // 
             // addMemberToolStripMenuItem
             // 

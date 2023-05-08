@@ -60,5 +60,15 @@ namespace LibrarySystem
         {
             this.booksTableAdapter.Fill(this.databaseDataSet.Books);
         }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

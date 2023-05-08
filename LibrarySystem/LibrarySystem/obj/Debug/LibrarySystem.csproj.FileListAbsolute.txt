@@ -136,3 +136,9 @@ D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.returnBook.
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Sell.resources
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.addMember.resources
 D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.applyMembership.resources
+C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.addMember.resources
+C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.applyMembership.resources
+C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.modifyBook.resources
+C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Sell.resources
+C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.lendBook.resources
+C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.reserveBook.resources

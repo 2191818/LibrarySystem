@@ -222,5 +222,15 @@ namespace LibrarySystem
             this.priceTextBox.Text = string.Empty;
             this.quantityTextBox.Text = string.Empty;
         }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
