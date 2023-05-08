@@ -30,12 +30,9 @@ namespace LibrarySystem
         
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
+            this.Hide();
+            new LibraryOptions().ShowDialog();
+            this.Show();
         }
 
         private void addUserButton_Click(object sender, EventArgs e)
@@ -78,6 +75,13 @@ namespace LibrarySystem
             {
                 MessageBox.Show("Error adding member: " + ex.Message);
             }
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Menu().ShowDialog();
+            this.Show();
         }
     }
 }

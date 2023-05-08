@@ -225,7 +225,9 @@ namespace LibrarySystem
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Menu().ShowDialog();
+            this.Show();
         }
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)

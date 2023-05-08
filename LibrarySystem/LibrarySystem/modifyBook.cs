@@ -23,8 +23,8 @@ namespace LibrarySystem
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LibraryOptions l1 = new LibraryOptions();
-            l1.Show();
+            new LibraryOptions().ShowDialog();
+            this.Show();
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,7 +50,51 @@ namespace LibrarySystem
 
         private void saveButton_Click(object sender, EventArgs e)
         {
+            int bookId;
+            if (!int.TryParse(bookTextBox.Text, out bookId))
+            {
+                MessageBox.Show("Please enter a valid book ID.");
+                return;
+            }
 
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    SqlCommand command = new SqlCommand("SELECT COUNT(*) FROM Books WHERE BookId = @BookId", connection);
+                    command.Parameters.AddWithValue("@BookId", bookId);
+
+                    int count = (int)command.ExecuteScalar();
+
+                    if (count == 0)
+                    {
+                        MessageBox.Show("The book ID does not exist.");
+                        return;
+                    }
+
+                    command = new SqlCommand("UPDATE Books SET Title = @Title, Author = @Author, Publisher = @Publisher, ISBN = @ISBN, Price = @Price, Quantity = @Quantity, Availability = @Availability WHERE BookId = @BookId", connection);
+                    command.Parameters.AddWithValue("@BookId", bookId);
+                    command.Parameters.AddWithValue("@Title", titleTextBox.Text);
+                    command.Parameters.AddWithValue("@Author", authorTextBox.Text);
+                    command.Parameters.AddWithValue("@Publisher", publisherTextBox.Text);
+                    command.Parameters.AddWithValue("@ISBN", isbnTextBox.Text);
+                    command.Parameters.AddWithValue("@Price", priceTextBox.Text);
+                    command.Parameters.AddWithValue("@Quantity", quantityTextBox.Text);
+                    command.Parameters.AddWithValue("@Availability", availabilityTextBox.Text);
+
+                    command.ExecuteNonQuery();
+
+                    connection.Close();
+                }
+
+                this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
