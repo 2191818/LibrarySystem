@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.databaseDataSet = new LibrarySystem.DatabaseDataSet();
-            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.booksTableAdapter = new LibrarySystem.DatabaseDataSetTableAdapters.BooksTableAdapter();
             this.bookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,12 +38,15 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseDataSet = new LibrarySystem.DatabaseDataSet();
+            this.booksTableAdapter = new LibrarySystem.DatabaseDataSetTableAdapters.BooksTableAdapter();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.memberIDTextBox = new System.Windows.Forms.TextBox();
+            this.userIDTextBox = new System.Windows.Forms.TextBox();
             this.returnButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,25 +65,12 @@
             this.availabilityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.booksBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1248, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(1109, 216);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // databaseDataSet
-            // 
-            this.databaseDataSet.DataSetName = "DatabaseDataSet";
-            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // booksBindingSource
-            // 
-            this.booksBindingSource.DataMember = "Books";
-            this.booksBindingSource.DataSource = this.databaseDataSet;
-            // 
-            // booksTableAdapter
-            // 
-            this.booksTableAdapter.ClearBeforeFill = true;
             // 
             // bookIDDataGridViewTextBoxColumn
             // 
@@ -149,28 +136,46 @@
             this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
             this.availabilityDataGridViewTextBoxColumn.Width = 150;
             // 
+            // booksBindingSource
+            // 
+            this.booksBindingSource.DataMember = "Books";
+            this.booksBindingSource.DataSource = this.databaseDataSet;
+            // 
+            // databaseDataSet
+            // 
+            this.databaseDataSet.DataSetName = "DatabaseDataSet";
+            this.databaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // booksTableAdapter
+            // 
+            this.booksTableAdapter.ClearBeforeFill = true;
+            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.memberIDTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(418, 323);
+            this.groupBox1.Controls.Add(this.userIDTextBox);
+            this.groupBox1.Location = new System.Drawing.Point(372, 258);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 78);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(178, 62);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Member ID";
+            this.groupBox1.Text = "User ID";
             // 
-            // memberIDTextBox
+            // userIDTextBox
             // 
-            this.memberIDTextBox.Location = new System.Drawing.Point(7, 26);
-            this.memberIDTextBox.Name = "memberIDTextBox";
-            this.memberIDTextBox.Size = new System.Drawing.Size(187, 26);
-            this.memberIDTextBox.TabIndex = 0;
+            this.userIDTextBox.Location = new System.Drawing.Point(6, 21);
+            this.userIDTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.userIDTextBox.Name = "userIDTextBox";
+            this.userIDTextBox.Size = new System.Drawing.Size(167, 22);
+            this.userIDTextBox.TabIndex = 0;
             // 
             // returnButton
             // 
-            this.returnButton.Location = new System.Drawing.Point(314, 427);
+            this.returnButton.Location = new System.Drawing.Point(279, 342);
+            this.returnButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(386, 110);
+            this.returnButton.Size = new System.Drawing.Size(343, 88);
             this.returnButton.TabIndex = 2;
             this.returnButton.Text = "Return Book";
             this.returnButton.UseVisualStyleBackColor = true;
@@ -178,17 +183,18 @@
             // 
             // returnBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.returnButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "returnBook";
-            this.Size = new System.Drawing.Size(1256, 575);
+            this.Size = new System.Drawing.Size(1116, 460);
             this.Load += new System.EventHandler(this.returnBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -210,7 +216,7 @@
         private DatabaseDataSet databaseDataSet;
         private DatabaseDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox memberIDTextBox;
+        private System.Windows.Forms.TextBox userIDTextBox;
         private System.Windows.Forms.Button returnButton;
     }
 }
