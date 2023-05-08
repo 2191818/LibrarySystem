@@ -31,9 +31,11 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.pwdLabel = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ErrorLabel = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cancelButton
@@ -65,14 +67,14 @@
             this.pwdLabel.TabIndex = 4;
             this.pwdLabel.Text = "Password:";
             // 
-            // txtPassword
+            // passwordTextBox
             // 
-            this.txtPassword.Location = new System.Drawing.Point(78, 125);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(394, 20);
-            this.txtPassword.TabIndex = 5;
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
+            this.passwordTextBox.Location = new System.Drawing.Point(78, 125);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(394, 20);
+            this.passwordTextBox.TabIndex = 5;
+            this.passwordTextBox.UseSystemPasswordChar = true;
+            this.passwordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // label2
             // 
@@ -98,14 +100,32 @@
             this.ErrorLabel.TabIndex = 9;
             this.ErrorLabel.Text = "ErrorLabel";
             // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.Location = new System.Drawing.Point(78, 92);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(394, 20);
+            this.usernameTextBox.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(14, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Username:";
+            // 
             // SupplierLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.pwdLabel);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
@@ -120,8 +140,10 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Label pwdLabel;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label ErrorLabel;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.Label label1;
     }
 }

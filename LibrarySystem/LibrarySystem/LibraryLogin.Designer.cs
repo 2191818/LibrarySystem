@@ -34,6 +34,8 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.ErrorLabel = new System.Windows.Forms.Label();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.usernameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // libraryLabel
@@ -49,7 +51,7 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(16, 128);
+            this.passwordLabel.Location = new System.Drawing.Point(16, 151);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(56, 13);
             this.passwordLabel.TabIndex = 2;
@@ -57,7 +59,7 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(78, 125);
+            this.txtPassword.Location = new System.Drawing.Point(78, 148);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(394, 20);
             this.txtPassword.TabIndex = 3;
@@ -66,7 +68,7 @@
             // 
             // cancelButton
             // 
-            this.cancelButton.Location = new System.Drawing.Point(12, 151);
+            this.cancelButton.Location = new System.Drawing.Point(12, 174);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(224, 23);
             this.cancelButton.TabIndex = 4;
@@ -76,7 +78,7 @@
             // 
             // okButton
             // 
-            this.okButton.Location = new System.Drawing.Point(248, 151);
+            this.okButton.Location = new System.Drawing.Point(248, 174);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(224, 23);
             this.okButton.TabIndex = 5;
@@ -95,11 +97,29 @@
             this.ErrorLabel.TabIndex = 8;
             this.ErrorLabel.Text = "ErrorLabel";
             // 
+            // usernameTextBox
+            // 
+            this.usernameTextBox.Location = new System.Drawing.Point(78, 122);
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(394, 20);
+            this.usernameTextBox.TabIndex = 9;
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Location = new System.Drawing.Point(16, 125);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(58, 13);
+            this.usernameLabel.TabIndex = 10;
+            this.usernameLabel.Text = "Username:";
+            // 
             // LibraryLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.usernameLabel);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
@@ -120,5 +140,7 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Label ErrorLabel;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.Label usernameLabel;
     }
 }

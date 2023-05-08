@@ -63,12 +63,18 @@ namespace LibrarySystem
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            SupplierOptions s1 = new SupplierOptions();
+            s1.ShowDialog();
+            Form.ActiveForm.Close();
         }
+
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new Menu().ShowDialog();
+            this.Show();
         }
     }
 }

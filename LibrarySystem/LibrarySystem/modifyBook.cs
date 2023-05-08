@@ -178,5 +178,15 @@ namespace LibrarySystem
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void modifyBook_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

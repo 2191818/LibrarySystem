@@ -85,12 +85,18 @@ namespace LibrarySystem
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form activeForm = Form.ActiveForm;
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            Application.Run(new Menu());
         }
     }
 }

@@ -120,6 +120,13 @@ namespace LibrarySystem
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            new Menu().ShowDialog();
+            this.Show();
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
 
         }
     }

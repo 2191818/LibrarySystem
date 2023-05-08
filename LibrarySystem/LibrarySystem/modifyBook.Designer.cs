@@ -102,191 +102,192 @@
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(1099, 26);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(824, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.bookTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(11, 492);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(8, 400);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(267, 62);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(200, 50);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Book ID";
             // 
             // bookTextBox
             // 
-            this.bookTextBox.Location = new System.Drawing.Point(7, 21);
-            this.bookTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bookTextBox.Location = new System.Drawing.Point(5, 17);
+            this.bookTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bookTextBox.Name = "bookTextBox";
-            this.bookTextBox.Size = new System.Drawing.Size(253, 22);
+            this.bookTextBox.Size = new System.Drawing.Size(191, 20);
             this.bookTextBox.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.titleTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(283, 492);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Location = new System.Drawing.Point(212, 400);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(267, 62);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(200, 50);
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Title";
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(7, 21);
-            this.titleTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.titleTextBox.Location = new System.Drawing.Point(5, 17);
+            this.titleTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(253, 22);
+            this.titleTextBox.Size = new System.Drawing.Size(191, 20);
             this.titleTextBox.TabIndex = 1;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.authorTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(555, 492);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Location = new System.Drawing.Point(416, 400);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(267, 62);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(200, 50);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Author";
             // 
             // authorTextBox
             // 
-            this.authorTextBox.Location = new System.Drawing.Point(7, 21);
-            this.authorTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.authorTextBox.Location = new System.Drawing.Point(5, 17);
+            this.authorTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.authorTextBox.Name = "authorTextBox";
-            this.authorTextBox.Size = new System.Drawing.Size(251, 22);
+            this.authorTextBox.Size = new System.Drawing.Size(189, 20);
             this.authorTextBox.TabIndex = 1;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.publisherTextBox);
-            this.groupBox4.Location = new System.Drawing.Point(827, 492);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Location = new System.Drawing.Point(620, 400);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(267, 62);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(200, 50);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Publisher";
             // 
             // publisherTextBox
             // 
-            this.publisherTextBox.Location = new System.Drawing.Point(7, 21);
-            this.publisherTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.publisherTextBox.Location = new System.Drawing.Point(5, 17);
+            this.publisherTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.publisherTextBox.Name = "publisherTextBox";
-            this.publisherTextBox.Size = new System.Drawing.Size(253, 22);
+            this.publisherTextBox.Size = new System.Drawing.Size(191, 20);
             this.publisherTextBox.TabIndex = 1;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.isbnTextBox);
-            this.groupBox5.Location = new System.Drawing.Point(11, 559);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox5.Location = new System.Drawing.Point(8, 454);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox5.Size = new System.Drawing.Size(267, 62);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Size = new System.Drawing.Size(200, 50);
             this.groupBox5.TabIndex = 3;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "ISBN";
             // 
             // isbnTextBox
             // 
-            this.isbnTextBox.Location = new System.Drawing.Point(7, 21);
-            this.isbnTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.isbnTextBox.Location = new System.Drawing.Point(5, 17);
+            this.isbnTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.isbnTextBox.Name = "isbnTextBox";
-            this.isbnTextBox.Size = new System.Drawing.Size(253, 22);
+            this.isbnTextBox.Size = new System.Drawing.Size(191, 20);
             this.isbnTextBox.TabIndex = 1;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.priceTextBox);
-            this.groupBox6.Location = new System.Drawing.Point(283, 559);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox6.Location = new System.Drawing.Point(212, 454);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox6.Size = new System.Drawing.Size(267, 62);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Size = new System.Drawing.Size(200, 50);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Price";
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(7, 21);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.priceTextBox.Location = new System.Drawing.Point(5, 17);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(253, 22);
+            this.priceTextBox.Size = new System.Drawing.Size(191, 20);
             this.priceTextBox.TabIndex = 1;
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.quantityTextBox);
-            this.groupBox7.Location = new System.Drawing.Point(555, 559);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox7.Location = new System.Drawing.Point(416, 454);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox7.Size = new System.Drawing.Size(267, 62);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Size = new System.Drawing.Size(200, 50);
             this.groupBox7.TabIndex = 3;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Quantity";
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(11, 21);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.quantityTextBox.Location = new System.Drawing.Point(8, 17);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(247, 22);
+            this.quantityTextBox.Size = new System.Drawing.Size(186, 20);
             this.quantityTextBox.TabIndex = 1;
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.availabilityTextBox);
-            this.groupBox8.Location = new System.Drawing.Point(827, 559);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox8.Location = new System.Drawing.Point(620, 454);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox8.Size = new System.Drawing.Size(267, 62);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Size = new System.Drawing.Size(200, 50);
             this.groupBox8.TabIndex = 5;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Availability";
             // 
             // availabilityTextBox
             // 
-            this.availabilityTextBox.Location = new System.Drawing.Point(7, 21);
-            this.availabilityTextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.availabilityTextBox.Location = new System.Drawing.Point(5, 17);
+            this.availabilityTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.availabilityTextBox.Name = "availabilityTextBox";
-            this.availabilityTextBox.Size = new System.Drawing.Size(253, 22);
+            this.availabilityTextBox.Size = new System.Drawing.Size(191, 20);
             this.availabilityTextBox.TabIndex = 1;
             // 
             // resetViewButton
             // 
-            this.resetViewButton.Location = new System.Drawing.Point(11, 625);
-            this.resetViewButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.resetViewButton.Location = new System.Drawing.Point(8, 508);
+            this.resetViewButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resetViewButton.Name = "resetViewButton";
-            this.resetViewButton.Size = new System.Drawing.Size(267, 92);
+            this.resetViewButton.Size = new System.Drawing.Size(200, 75);
             this.resetViewButton.TabIndex = 6;
             this.resetViewButton.Text = "Reset View";
             this.resetViewButton.UseVisualStyleBackColor = true;
@@ -294,10 +295,10 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(555, 625);
-            this.saveButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.saveButton.Location = new System.Drawing.Point(416, 508);
+            this.saveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(267, 92);
+            this.saveButton.Size = new System.Drawing.Size(200, 75);
             this.saveButton.TabIndex = 7;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -305,10 +306,10 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(283, 625);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.deleteButton.Location = new System.Drawing.Point(212, 508);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(267, 92);
+            this.deleteButton.Size = new System.Drawing.Size(200, 75);
             this.deleteButton.TabIndex = 8;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -328,11 +329,10 @@
             this.quantityDataGridViewTextBoxColumn,
             this.availabilityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.booksBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 33);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(8, 27);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1076, 453);
+            this.dataGridView1.Size = new System.Drawing.Size(807, 368);
             this.dataGridView1.TabIndex = 9;
             // 
             // bookIDDataGridViewTextBoxColumn
@@ -406,10 +406,10 @@
             // 
             // editButton
             // 
-            this.editButton.Location = new System.Drawing.Point(827, 625);
-            this.editButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.editButton.Location = new System.Drawing.Point(620, 508);
+            this.editButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.editButton.Name = "editButton";
-            this.editButton.Size = new System.Drawing.Size(267, 92);
+            this.editButton.Size = new System.Drawing.Size(200, 75);
             this.editButton.TabIndex = 10;
             this.editButton.Text = "Edit";
             this.editButton.UseVisualStyleBackColor = true;
@@ -417,7 +417,7 @@
             // 
             // modifyBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.dataGridView1);
@@ -433,9 +433,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "modifyBook";
-            this.Size = new System.Drawing.Size(1099, 720);
+            this.Size = new System.Drawing.Size(824, 585);
+            this.Load += new System.EventHandler(this.modifyBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);

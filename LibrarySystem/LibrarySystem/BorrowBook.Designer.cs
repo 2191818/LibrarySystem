@@ -39,7 +39,6 @@
             this.backToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.booksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.bookIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.titleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,6 +47,7 @@
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availabilityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.booksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -92,6 +92,7 @@
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "User ID";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
             // userIDTextBox
             // 
@@ -147,11 +148,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(857, 347);
             this.dataGridView1.TabIndex = 27;
             // 
-            // booksBindingSource1
-            // 
-            this.booksBindingSource1.DataMember = "Books";
-            this.booksBindingSource1.DataSource = this.databaseDataSet;
-            // 
             // bookIDDataGridViewTextBoxColumn
             // 
             this.bookIDDataGridViewTextBoxColumn.DataPropertyName = "BookID";
@@ -199,6 +195,11 @@
             this.availabilityDataGridViewTextBoxColumn.DataPropertyName = "Availability";
             this.availabilityDataGridViewTextBoxColumn.HeaderText = "Availability";
             this.availabilityDataGridViewTextBoxColumn.Name = "availabilityDataGridViewTextBoxColumn";
+            // 
+            // booksBindingSource1
+            // 
+            this.booksBindingSource1.DataMember = "Books";
+            this.booksBindingSource1.DataSource = this.databaseDataSet;
             // 
             // borrowBook
             // 

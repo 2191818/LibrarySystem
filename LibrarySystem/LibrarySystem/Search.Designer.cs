@@ -175,91 +175,81 @@
             this.quantityDataGridViewTextBoxColumn,
             this.availabilityDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.booksBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 75);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(1227, 555);
+            this.dataGridView1.Size = new System.Drawing.Size(818, 361);
             this.dataGridView1.TabIndex = 0;
             // 
             // bookTextBox
             // 
-            this.bookTextBox.Location = new System.Drawing.Point(9, 29);
-            this.bookTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bookTextBox.Location = new System.Drawing.Point(6, 19);
             this.bookTextBox.Name = "bookTextBox";
-            this.bookTextBox.Size = new System.Drawing.Size(280, 26);
+            this.bookTextBox.Size = new System.Drawing.Size(188, 20);
             this.bookTextBox.TabIndex = 1;
             this.bookTextBox.TextChanged += new System.EventHandler(this.bookTextBox_TextChanged);
             // 
             // titleTextBox
             // 
-            this.titleTextBox.Location = new System.Drawing.Point(9, 29);
-            this.titleTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.titleTextBox.Location = new System.Drawing.Point(6, 19);
             this.titleTextBox.Name = "titleTextBox";
-            this.titleTextBox.Size = new System.Drawing.Size(280, 26);
+            this.titleTextBox.Size = new System.Drawing.Size(188, 20);
             this.titleTextBox.TabIndex = 2;
             this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
             // 
             // pubTextBox
             // 
-            this.pubTextBox.Location = new System.Drawing.Point(9, 29);
-            this.pubTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pubTextBox.Location = new System.Drawing.Point(6, 19);
             this.pubTextBox.Name = "pubTextBox";
-            this.pubTextBox.Size = new System.Drawing.Size(280, 26);
+            this.pubTextBox.Size = new System.Drawing.Size(188, 20);
             this.pubTextBox.TabIndex = 3;
             this.pubTextBox.TextChanged += new System.EventHandler(this.pubTextBox_TextChanged);
             // 
             // authorTextBox
             // 
-            this.authorTextBox.Location = new System.Drawing.Point(9, 29);
-            this.authorTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.authorTextBox.Location = new System.Drawing.Point(6, 19);
             this.authorTextBox.Name = "authorTextBox";
-            this.authorTextBox.Size = new System.Drawing.Size(280, 26);
+            this.authorTextBox.Size = new System.Drawing.Size(188, 20);
             this.authorTextBox.TabIndex = 4;
             this.authorTextBox.TextChanged += new System.EventHandler(this.authorTextBox_TextChanged);
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(9, 29);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.priceTextBox.Location = new System.Drawing.Point(6, 19);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(280, 26);
+            this.priceTextBox.Size = new System.Drawing.Size(188, 20);
             this.priceTextBox.TabIndex = 5;
             this.priceTextBox.TextChanged += new System.EventHandler(this.priceTextBox_TextChanged);
             // 
             // isbnTextBox
             // 
-            this.isbnTextBox.Location = new System.Drawing.Point(9, 29);
-            this.isbnTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.isbnTextBox.Location = new System.Drawing.Point(6, 19);
             this.isbnTextBox.Name = "isbnTextBox";
-            this.isbnTextBox.Size = new System.Drawing.Size(280, 26);
+            this.isbnTextBox.Size = new System.Drawing.Size(188, 20);
             this.isbnTextBox.TabIndex = 6;
             this.isbnTextBox.TextChanged += new System.EventHandler(this.isbnTextBox_TextChanged);
             // 
             // availTextBox
             // 
-            this.availTextBox.Location = new System.Drawing.Point(9, 29);
-            this.availTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.availTextBox.Location = new System.Drawing.Point(6, 19);
             this.availTextBox.Name = "availTextBox";
-            this.availTextBox.Size = new System.Drawing.Size(280, 26);
+            this.availTextBox.Size = new System.Drawing.Size(188, 20);
             this.availTextBox.TabIndex = 7;
             this.availTextBox.TextChanged += new System.EventHandler(this.availTextBox_TextChanged);
             // 
             // quantityTextBox
             // 
-            this.quantityTextBox.Location = new System.Drawing.Point(9, 29);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.quantityTextBox.Location = new System.Drawing.Point(6, 19);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(280, 26);
+            this.quantityTextBox.Size = new System.Drawing.Size(188, 20);
             this.quantityTextBox.TabIndex = 8;
             this.quantityTextBox.TextChanged += new System.EventHandler(this.quantityTextBox_TextChanged);
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(623, 812);
-            this.searchButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.searchButton.Location = new System.Drawing.Point(415, 528);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(609, 77);
+            this.searchButton.Size = new System.Drawing.Size(406, 50);
             this.searchButton.TabIndex = 9;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -267,10 +257,9 @@
             // 
             // restViewButton
             // 
-            this.restViewButton.Location = new System.Drawing.Point(5, 812);
-            this.restViewButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.restViewButton.Location = new System.Drawing.Point(3, 528);
             this.restViewButton.Name = "restViewButton";
-            this.restViewButton.Size = new System.Drawing.Size(609, 77);
+            this.restViewButton.Size = new System.Drawing.Size(406, 50);
             this.restViewButton.TabIndex = 10;
             this.restViewButton.Text = "Reset View";
             this.restViewButton.UseVisualStyleBackColor = true;
@@ -279,11 +268,9 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.bookTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(5, 639);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(3, 415);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(300, 77);
+            this.groupBox1.Size = new System.Drawing.Size(200, 50);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Search by Book ID";
@@ -291,11 +278,9 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.titleTextBox);
-            this.groupBox2.Location = new System.Drawing.Point(315, 639);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox2.Location = new System.Drawing.Point(210, 415);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(300, 77);
+            this.groupBox2.Size = new System.Drawing.Size(200, 50);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search by Title";
@@ -303,11 +288,9 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.authorTextBox);
-            this.groupBox3.Location = new System.Drawing.Point(623, 639);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox3.Location = new System.Drawing.Point(415, 415);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox3.Size = new System.Drawing.Size(300, 77);
+            this.groupBox3.Size = new System.Drawing.Size(200, 50);
             this.groupBox3.TabIndex = 13;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Search by Author";
@@ -315,11 +298,9 @@
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.quantityTextBox);
-            this.groupBox4.Location = new System.Drawing.Point(623, 725);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox4.Location = new System.Drawing.Point(415, 471);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox4.Size = new System.Drawing.Size(300, 77);
+            this.groupBox4.Size = new System.Drawing.Size(200, 50);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Search by Quantity";
@@ -327,11 +308,9 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.priceTextBox);
-            this.groupBox5.Location = new System.Drawing.Point(315, 725);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox5.Location = new System.Drawing.Point(210, 471);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox5.Size = new System.Drawing.Size(300, 77);
+            this.groupBox5.Size = new System.Drawing.Size(200, 50);
             this.groupBox5.TabIndex = 15;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Search by Price";
@@ -339,11 +318,9 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.isbnTextBox);
-            this.groupBox6.Location = new System.Drawing.Point(5, 725);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox6.Location = new System.Drawing.Point(3, 471);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox6.Size = new System.Drawing.Size(300, 77);
+            this.groupBox6.Size = new System.Drawing.Size(200, 50);
             this.groupBox6.TabIndex = 15;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Search by ISBN";
@@ -351,57 +328,54 @@
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.pubTextBox);
-            this.groupBox7.Location = new System.Drawing.Point(933, 639);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox7.Location = new System.Drawing.Point(622, 415);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox7.Size = new System.Drawing.Size(300, 77);
+            this.groupBox7.Size = new System.Drawing.Size(200, 50);
             this.groupBox7.TabIndex = 15;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Search by Publisher";
+            this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
             // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.availTextBox);
-            this.groupBox8.Location = new System.Drawing.Point(933, 725);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox8.Location = new System.Drawing.Point(622, 471);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox8.Size = new System.Drawing.Size(300, 77);
+            this.groupBox8.Size = new System.Drawing.Size(200, 50);
             this.groupBox8.TabIndex = 15;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Search by Availability";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backToolStripMenuItem,
             this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1239, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(826, 24);
             this.menuStrip1.TabIndex = 16;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // backToolStripMenuItem
             // 
             this.backToolStripMenuItem.Name = "backToolStripMenuItem";
-            this.backToolStripMenuItem.Size = new System.Drawing.Size(64, 29);
+            this.backToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.backToolStripMenuItem.Text = "Back";
             this.backToolStripMenuItem.Click += new System.EventHandler(this.backToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
             this.logOutToolStripMenuItem.Name = "logOutToolStripMenuItem";
-            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(93, 29);
+            this.logOutToolStripMenuItem.Size = new System.Drawing.Size(62, 22);
             this.logOutToolStripMenuItem.Text = "Log Out";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
             // Search
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
@@ -415,9 +389,8 @@
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Search";
-            this.Size = new System.Drawing.Size(1239, 904);
+            this.Size = new System.Drawing.Size(826, 588);
             this.Load += new System.EventHandler(this.Search_Load);
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSetBindingSource)).EndInit();
