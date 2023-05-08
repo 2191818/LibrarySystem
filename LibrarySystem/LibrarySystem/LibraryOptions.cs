@@ -50,7 +50,10 @@ namespace LibrarySystem
 
         private void modifyBookToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            modifyBook modify = new modifyBook();
+            modify.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(modify);
         }
 
         private void reserverBookToolStripMenuItem_Click(object sender, EventArgs e)
