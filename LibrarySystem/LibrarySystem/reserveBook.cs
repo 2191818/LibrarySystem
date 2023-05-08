@@ -14,6 +14,8 @@ namespace LibrarySystem
 {
     public partial class reserveBook : UserControl
     {
+        private string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
+
         public reserveBook()
         {
             InitializeComponent();
@@ -21,7 +23,14 @@ namespace LibrarySystem
 
         private void reserveBook_Load(object sender, EventArgs e)
         {
-            this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+            try
+            {
+                this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error loading books: " + ex.Message);
+            }
         }
 
         private void reserverButton_Click(object sender, EventArgs e)
@@ -40,8 +49,6 @@ namespace LibrarySystem
                 return;
             }
 
-            string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
-
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -55,14 +62,14 @@ namespace LibrarySystem
                             foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                             {
                                 int bookID = (int)row.Cells["bookIDDataGridViewTextBoxColumn"].Value;
-                                int quantity = 1; // assuming each reservation is for one book
 
                                 using (SqlCommand cmd = new SqlCommand("ReserveBook", conn, tran))
                                 {
                                     cmd.CommandType = CommandType.StoredProcedure;
                                     cmd.Parameters.AddWithValue("@BookID", bookID);
                                     cmd.Parameters.AddWithValue("@Availability", "Reserved");
-                                    cmd.Parameters.AddWithValue("@Quantity", quantity);
+                                    cmd.Parameters.AddWithValue("@Quantity", 1);
+                                    cmd.Parameters.AddWithValue("@UserID", userID);
 
                                     cmd.ExecuteNonQuery();
                                 }
@@ -71,6 +78,19 @@ namespace LibrarySystem
                             tran.Commit();
                             MessageBox.Show("Books reserved successfully.");
                             this.booksTableAdapter.Fill(this.databaseDataSet.Books);
+                        }
+                        catch (SqlException ex)
+                        {
+                            tran.Rollback();
+
+                            if (ex.Number == 50000) // custom error number for negative quantity
+                            {
+                                MessageBox.Show("Error reserving books: Not enough copies available to reserve.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error reserving books: " + ex.Message);
+                            }
                         }
                         catch (Exception ex)
                         {
