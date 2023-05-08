@@ -70,6 +70,18 @@
     <Compile Include="Add.Designer.cs">
       <DependentUpon>Add.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddMember.Designer.cs">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="applyMembership.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="applyMembership.Designer.cs">
+      <DependentUpon>applyMembership.cs</DependentUpon>
+    </Compile>
     <Compile Include="BorrowBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +160,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMember.resx">
+      <DependentUpon>AddMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="applyMembership.resx">
+      <DependentUpon>applyMembership.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BorrowBook.resx">
       <DependentUpon>BorrowBook.cs</DependentUpon>
