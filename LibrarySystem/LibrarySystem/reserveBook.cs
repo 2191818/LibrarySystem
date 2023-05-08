@@ -67,7 +67,6 @@ namespace LibrarySystem
                                 {
                                     cmd.CommandType = CommandType.StoredProcedure;
                                     cmd.Parameters.AddWithValue("@BookID", bookID);
-                                    cmd.Parameters.AddWithValue("@Availability", "Reserved");
                                     cmd.Parameters.AddWithValue("@Quantity", 1);
                                     cmd.Parameters.AddWithValue("@UserID", userID);
 
@@ -108,16 +107,12 @@ namespace LibrarySystem
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new LibraryOptions().ShowDialog();
-            this.Show();
+
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Menu().ShowDialog();
-            this.Show();
+
         }
     }
 }

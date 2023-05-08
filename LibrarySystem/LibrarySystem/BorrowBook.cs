@@ -33,7 +33,13 @@ namespace LibrarySystem
             }
 
             int bookID = (int)dataGridView1.SelectedRows[0].Cells["bookIDDataGridViewTextBoxColumn"].Value;
-            int userID = int.Parse(userIDTextBox.Text);
+
+            if (!int.TryParse(userIDTextBox.Text, out int userID) || !CheckUserExists(userID))
+            {
+                MessageBox.Show("Please enter a valid user ID.");
+                return;
+            }
+
             DateTime transactionDate = DateTime.Now;
 
             string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
@@ -74,18 +80,47 @@ namespace LibrarySystem
             }
         }
 
+        private bool CheckUserExists(int userID)
+        {
+            bool userExists = false;
+
+            string connectionString = ConfigurationManager.ConnectionStrings["LibrarySystemConnectionString"].ConnectionString;
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE UserID = @UserID", conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserID", userID);
+
+                        conn.Open();
+
+                        int userCount = (int)cmd.ExecuteScalar();
+
+                        if (userCount > 0)
+                        {
+                            userExists = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error checking user: " + ex.Message);
+            }
+
+            return userExists;
+        }
+
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new LibraryOptions().ShowDialog();
-            this.Show();
+
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Menu().ShowDialog();
-            this.Show();
+
         }
     }
 }

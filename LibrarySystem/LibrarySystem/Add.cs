@@ -34,14 +34,14 @@ namespace LibrarySystem
             decimal price;
             if (!decimal.TryParse(priceTextBox.Text, out price) || price < 0)
             {
-                MessageBox.Show("Please enter a valid, non-negative price.");
+                MessageBox.Show("Please enter a valid price.");
                 return;
             }
 
             int quantity;
             if (!int.TryParse(quantityTextBox.Text, out quantity) || quantity < 0)
             {
-                MessageBox.Show("Please enter a valid, non-negative quantity.");
+                MessageBox.Show("Please enter a valid quantity.");
                 return;
             }
 
@@ -85,16 +85,12 @@ namespace LibrarySystem
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new LibraryOptions().ShowDialog();
-            this.Show();
+
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Menu().ShowDialog();
-            this.Show();
+
         }
     }
 }
