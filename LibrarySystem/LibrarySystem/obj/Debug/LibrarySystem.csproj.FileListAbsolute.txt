@@ -130,3 +130,7 @@ C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\Lib
 D:\Chrome\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.borrowBook.resources
 C:\Users\mona3\Downloads\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.returnBook.resources
 D:\Chrome\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.returnBook.resources
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Add.resources
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.borrowBook.resources
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.returnBook.resources
+D:\LibrarySystem\LibrarySystem\LibrarySystem\obj\Debug\LibrarySystem.Sell.resources

@@ -47,9 +47,6 @@
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.membershipStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.applyMembershipButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
@@ -67,11 +64,11 @@
             this.passwordDataGridViewTextBoxColumn,
             this.userTypeDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.usersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 219);
+            this.dataGridView1.Size = new System.Drawing.Size(667, 180);
             this.dataGridView1.TabIndex = 0;
             // 
             // databaseDataSet
@@ -133,11 +130,11 @@
             this.emailDataGridViewTextBoxColumn,
             this.membershipStatusDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.membersBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 389);
+            this.dataGridView2.Location = new System.Drawing.Point(0, 228);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(1233, 340);
+            this.dataGridView2.Size = new System.Drawing.Size(1129, 238);
             this.dataGridView2.TabIndex = 1;
             // 
             // membersBindingSource
@@ -205,45 +202,14 @@
             this.membershipStatusDataGridViewTextBoxColumn.Name = "membershipStatusDataGridViewTextBoxColumn";
             this.membershipStatusDataGridViewTextBoxColumn.Width = 150;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(4, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "USERS";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(4, 363);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "MEMBERSHIP";
-            // 
-            // applyMembershipButton
-            // 
-            this.applyMembershipButton.Location = new System.Drawing.Point(454, 839);
-            this.applyMembershipButton.Name = "applyMembershipButton";
-            this.applyMembershipButton.Size = new System.Drawing.Size(568, 153);
-            this.applyMembershipButton.TabIndex = 4;
-            this.applyMembershipButton.Text = "Apply Membership";
-            this.applyMembershipButton.UseVisualStyleBackColor = true;
-            this.applyMembershipButton.Click += new System.EventHandler(this.applyMembershipButton_Click);
-            // 
             // applyMembership
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.applyMembershipButton);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "applyMembership";
-            this.Size = new System.Drawing.Size(1459, 1053);
+            this.Size = new System.Drawing.Size(1603, 664);
             this.Load += new System.EventHandler(this.applyMembership_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).EndInit();
@@ -251,7 +217,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.membersBindingSource)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -275,8 +240,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn membershipStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource membersBindingSource;
         private DatabaseDataSetTableAdapters.MembersTableAdapter membersTableAdapter;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button applyMembershipButton;
     }
 }
