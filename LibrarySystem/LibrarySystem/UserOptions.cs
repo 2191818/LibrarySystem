@@ -45,5 +45,13 @@ namespace LibrarySystem
             this.Controls.Clear();
             this.Controls.Add(borrowControl);
         }
+
+        private void returnBookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            returnBook returnControl = new returnBook();
+            returnControl.Dock = DockStyle.Fill;
+            this.Controls.Clear();
+            this.Controls.Add(returnControl);
+        }
     }
 }

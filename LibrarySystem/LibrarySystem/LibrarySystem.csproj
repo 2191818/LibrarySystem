@@ -88,6 +88,12 @@
     <Compile Include="LibraryOptions.Designer.cs">
       <DependentUpon>LibraryOptions.cs</DependentUpon>
     </Compile>
+    <Compile Include="returnBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="returnBook.Designer.cs">
+      <DependentUpon>returnBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Search.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LibraryOptions.resx">
       <DependentUpon>LibraryOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="returnBook.resx">
+      <DependentUpon>returnBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Search.resx">
       <DependentUpon>Search.cs</DependentUpon>
