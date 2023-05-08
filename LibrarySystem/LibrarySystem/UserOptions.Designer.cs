@@ -39,7 +39,6 @@
             this.booksBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.booksTableAdapter = new LibrarySystem.DatabaseDataSetTableAdapters.BooksTableAdapter();
             this.search1 = new LibrarySystem.Search();
-            this.add1 = new LibrarySystem.Add();
             this.searchUserTableAdapter1 = new LibrarySystem.DatabaseDataSetTableAdapters.SearchUserTableAdapter();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
@@ -58,7 +57,6 @@
             this.logoutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(1401, 33);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
@@ -82,6 +80,7 @@
             this.returnBookToolStripMenuItem.Name = "returnBookToolStripMenuItem";
             this.returnBookToolStripMenuItem.Size = new System.Drawing.Size(125, 29);
             this.returnBookToolStripMenuItem.Text = "Return Book";
+            this.returnBookToolStripMenuItem.Click += new System.EventHandler(this.returnBookToolStripMenuItem_Click);
             // 
             // applyMembershipToolStripMenuItem
             // 
@@ -118,14 +117,6 @@
             this.search1.Size = new System.Drawing.Size(0, 0);
             this.search1.TabIndex = 6;
             // 
-            // add1
-            // 
-            this.add1.Location = new System.Drawing.Point(33, 42);
-            this.add1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.add1.Name = "add1";
-            this.add1.Size = new System.Drawing.Size(0, 0);
-            this.add1.TabIndex = 7;
-            // 
             // searchUserTableAdapter1
             // 
             this.searchUserTableAdapter1.ClearBeforeFill = true;
@@ -135,7 +126,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1401, 1049);
-            this.Controls.Add(this.add1);
             this.Controls.Add(this.search1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -164,7 +154,6 @@
         private System.Windows.Forms.BindingSource booksBindingSource;
         private DatabaseDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
         private Search search1;
-        private Add add1;
         private DatabaseDataSetTableAdapters.SearchUserTableAdapter searchUserTableAdapter1;
     }
 }
