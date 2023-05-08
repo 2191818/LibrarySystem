@@ -47,6 +47,7 @@
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.membershipStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.applyMembershipButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
@@ -202,10 +203,21 @@
             this.membershipStatusDataGridViewTextBoxColumn.Name = "membershipStatusDataGridViewTextBoxColumn";
             this.membershipStatusDataGridViewTextBoxColumn.Width = 150;
             // 
+            // applyMembershipButton
+            // 
+            this.applyMembershipButton.Location = new System.Drawing.Point(414, 501);
+            this.applyMembershipButton.Name = "applyMembershipButton";
+            this.applyMembershipButton.Size = new System.Drawing.Size(504, 122);
+            this.applyMembershipButton.TabIndex = 2;
+            this.applyMembershipButton.Text = "Apply Membership";
+            this.applyMembershipButton.UseVisualStyleBackColor = true;
+            this.applyMembershipButton.Click += new System.EventHandler(this.applyMembershipButton_Click);
+            // 
             // applyMembership
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.applyMembershipButton);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "applyMembership";
@@ -240,5 +252,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn membershipStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource membersBindingSource;
         private DatabaseDataSetTableAdapters.MembersTableAdapter membersTableAdapter;
+        private System.Windows.Forms.Button applyMembershipButton;
     }
 }

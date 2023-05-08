@@ -22,5 +22,10 @@ namespace LibrarySystem
             this.usersTableAdapter.Fill(this.databaseDataSet.Users);
             this.membersTableAdapter.Fill(this.databaseDataSet.Members);
         }
+
+        private void applyMembershipButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
