@@ -34,7 +34,7 @@
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ErrorLabel = new System.Windows.Forms.Label();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.supplierIDTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -74,7 +74,6 @@
             this.passwordTextBox.Size = new System.Drawing.Size(394, 20);
             this.passwordTextBox.TabIndex = 5;
             this.passwordTextBox.UseSystemPasswordChar = true;
-            this.passwordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
             // 
             // label2
             // 
@@ -100,21 +99,21 @@
             this.ErrorLabel.TabIndex = 9;
             this.ErrorLabel.Text = "ErrorLabel";
             // 
-            // usernameTextBox
+            // supplierIDTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(78, 92);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(394, 20);
-            this.usernameTextBox.TabIndex = 10;
+            this.supplierIDTextBox.Location = new System.Drawing.Point(78, 92);
+            this.supplierIDTextBox.Name = "supplierIDTextBox";
+            this.supplierIDTextBox.Size = new System.Drawing.Size(394, 20);
+            this.supplierIDTextBox.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Username:";
+            this.label1.Text = "Supplier ID:";
             // 
             // SupplierLogin
             // 
@@ -122,7 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.usernameTextBox);
+            this.Controls.Add(this.supplierIDTextBox);
             this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.passwordTextBox);
@@ -143,7 +142,7 @@
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label ErrorLabel;
-        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox supplierIDTextBox;
         private System.Windows.Forms.Label label1;
     }
 }

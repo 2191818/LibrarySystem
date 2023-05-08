@@ -83,7 +83,9 @@ namespace LibrarySystem
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            new LibraryOptions().ShowDialog();
+            this.Show();
         }
 
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)

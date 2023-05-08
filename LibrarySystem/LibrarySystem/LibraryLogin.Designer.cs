@@ -30,11 +30,11 @@
         {
             this.libraryLabel = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.cancelButton = new System.Windows.Forms.Button();
             this.okButton = new System.Windows.Forms.Button();
             this.ErrorLabel = new System.Windows.Forms.Label();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.memberIDTextBox = new System.Windows.Forms.TextBox();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -57,14 +57,13 @@
             this.passwordLabel.TabIndex = 2;
             this.passwordLabel.Text = "Password:";
             // 
-            // txtPassword
+            // passwordTextBox
             // 
-            this.txtPassword.Location = new System.Drawing.Point(78, 148);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(394, 20);
-            this.txtPassword.TabIndex = 3;
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassword_KeyDown);
+            this.passwordTextBox.Location = new System.Drawing.Point(78, 148);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(394, 20);
+            this.passwordTextBox.TabIndex = 3;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             // 
             // cancelButton
             // 
@@ -97,21 +96,21 @@
             this.ErrorLabel.TabIndex = 8;
             this.ErrorLabel.Text = "ErrorLabel";
             // 
-            // usernameTextBox
+            // memberIDTextBox
             // 
-            this.usernameTextBox.Location = new System.Drawing.Point(78, 122);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(394, 20);
-            this.usernameTextBox.TabIndex = 9;
+            this.memberIDTextBox.Location = new System.Drawing.Point(78, 122);
+            this.memberIDTextBox.Name = "memberIDTextBox";
+            this.memberIDTextBox.Size = new System.Drawing.Size(394, 20);
+            this.memberIDTextBox.TabIndex = 9;
             // 
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
             this.usernameLabel.Location = new System.Drawing.Point(16, 125);
             this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(58, 13);
+            this.usernameLabel.Size = new System.Drawing.Size(62, 13);
             this.usernameLabel.TabIndex = 10;
-            this.usernameLabel.Text = "Username:";
+            this.usernameLabel.Text = "Member ID:";
             // 
             // LibraryLogin
             // 
@@ -119,11 +118,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
             this.Controls.Add(this.usernameLabel);
-            this.Controls.Add(this.usernameTextBox);
+            this.Controls.Add(this.memberIDTextBox);
             this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.cancelButton);
-            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.libraryLabel);
             this.Name = "LibraryLogin";
@@ -136,11 +135,11 @@
         #endregion
         private System.Windows.Forms.Label libraryLabel;
         private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button okButton;
         private System.Windows.Forms.Label ErrorLabel;
-        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox memberIDTextBox;
         private System.Windows.Forms.Label usernameLabel;
     }
 }

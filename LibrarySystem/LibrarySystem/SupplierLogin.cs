@@ -22,6 +22,7 @@ namespace LibrarySystem
 
             ErrorLabel.Text = "";
         }
+
         private void cancelButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -31,7 +32,7 @@ namespace LibrarySystem
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            string username = usernameTextBox.Text;
+            string supplierID = supplierIDTextBox.Text;
             string password = passwordTextBox.Text;
 
             try
@@ -40,9 +41,9 @@ namespace LibrarySystem
                 {
                     conn.Open();
 
-                    using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Users WHERE Username=@Username AND Password=@Password", conn))
+                    using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM Suppliers s INNER JOIN Users u ON s.UserID = u.UserID WHERE s.SupplierID = @SupplierID AND u.Password = @Password", conn))
                     {
-                        cmd.Parameters.AddWithValue("@Username", username);
+                        cmd.Parameters.AddWithValue("@SupplierID", supplierID);
                         cmd.Parameters.AddWithValue("@Password", password);
 
                         int count = (int)cmd.ExecuteScalar();
@@ -57,17 +58,20 @@ namespace LibrarySystem
                         else
                         {
                             // Invalid credentials, show an error message
-                            ErrorLabel.Text = "Incorrect Username or Password";
+                            ErrorLabel.Text = "Incorrect SupplierID or Password";
                         }
                     }
                 }
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 MessageBox.Show("Error logging in: " + ex.Message);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An unexpected error occurred: " + ex.Message);
+            }
         }
-
 
         private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
