@@ -15,4 +15,4 @@
    - Data is stored in XML, JSON files, or a database.
    - Input validation is applied.
 
-Each system follows Object-oriented design principles, incorporates design patterns, and utilizes data structure concepts. The project documentation is maintained in a README file, and both systems collectively create an effective Library Management System.
+Each system follows Object-oriented design principles, incorporates design patterns, and utilizes data structure concepts. Both systems collectively create an effective Library Management System.
